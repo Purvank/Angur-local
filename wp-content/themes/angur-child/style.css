@@ -1,0 +1,4920 @@
+/* 
+Theme Name: angur Child 
+Template: angur 
+*/
+/* fonts */
+ @font-face {
+     font-family: 'Gilroy-ExtraBold';
+     src: url('fonts/Gilroy-ExtraBold.woff2') format('woff2'), url('fonts/Gilroy-ExtraBold.woff') format('woff');
+     font-weight: 800;
+     font-style: normal;
+     font-display: swap;
+}
+ @font-face {
+     font-family: 'Gilroy-Light';
+     src: url('fonts/Gilroy-Light.woff2') format('woff2'), url('fonts/Gilroy-Light.woff') format('woff');
+     font-weight: 300;
+     font-style: normal;
+     font-display: swap;
+}
+ @font-face {
+     font-family: 'AvenirNextCyr-Light';
+     src: url('fonts/AvenirNextCyr-Light.woff2') format('woff2'), url('fonts/AvenirNextCyr-Light.woff') format('woff');
+     font-weight: 300;
+     font-style: normal;
+     font-display: swap;
+}
+ @font-face {
+     font-family: 'AvenirNextCyr-Thin';
+     src: url('fonts/AvenirNextCyr-Thin.woff2') format('woff2'), url('fonts/AvenirNextCyr-Thin.woff') format('woff');
+     font-weight: 100;
+     font-style: normal;
+     font-display: swap;
+}
+ @font-face {
+     font-family: 'AvenirNextCyr-Demi';
+     src: url('fonts/AvenirNextCyr-Demi.woff2') format('woff2'), url('fonts/AvenirNextCyr-Demi.woff') format('woff');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+ .learn-more-btn p {
+     float: left;
+     width: 100%;
+     margin-top: 42px;
+}
+ a{
+     transition: all 200ms ease;
+}
+/* fonts */
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: 'AvenirNextCyr-Light';
+     color: #555555;
+     cursor: url('https://s.electerious.com/images/codepen/cursor.svg') 3 3, auto;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+.header_cus {
+  padding:0 0;
+}
+.s_banner_img img {
+  height: 100%; width: 100%; display: block; object-fit: cover;
+}
+.header_cus h1.archive-title {
+	font-family: 'AvenirNextCyr-Demi';
+	margin-top: 50px;
+}
+#site-content\ p_cus_site_content p, #site-content\ p_cus_site_content .entry-content {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'AvenirNextCyr-Light';
+}
+ .footer {
+     background: url(images/footer_bg.png) no-repeat;
+     height: 578px;
+     background-size: cover;
+     border:none;
+     margin-top: 128px;
+     position: relative;
+     float: left;
+     width: 100%;
+}
+ .copyright {
+     float: left;
+     width: 100%;
+     height: 82px;
+     background: rgba(0,0,0,0.6);
+     text-align: center;
+     color: #908787;
+     font-size: 14px;
+     line-height: 82px;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+}
+ .copyright span {
+    color: #017a40;
+    float: right;
+    font-size: 12px;
+}
+ #scroll {
+     position:fixed;
+     left:20px;
+     bottom:20px;
+     cursor:pointer;
+     width:45px;
+     height:45px;
+     background-color:#00a459;
+     border:2px solid #00a459;
+     text-indent:-9999px;
+     display:none;
+     z-index: 9;
+     border-radius: 100px;
+}
+ #scroll span {
+     position:absolute;
+     top:50%;
+     left:50%;
+     margin-left:-8px;
+     margin-top:-12px;
+     height:0;
+     width:0;
+     border:8px solid transparent;
+     border-bottom-color:#ffffff;
+}
+ #scroll:hover {
+     background-color:transparent;
+     border:2px solid #00a459;
+     opacity:1;
+     filter:"alpha(opacity=100)";
+     -ms-filter:"alpha(opacity=100)";
+}
+ #scroll:focus {
+     outline:none;
+}
+ #scroll > span {
+     animation: inherit;
+}
+ #scroll:hover span {
+     border-bottom-color:#00a459;
+}
+ .social {
+     float: left;
+     width: 100%;
+     border-top: 1px solid #525252;
+     padding: 30px 0 40px 0;
+     margin-top: 70px;
+     position: relative;
+}
+ .social label {
+     float: left;
+     width: auto;
+     color: #fff;
+     font-size: 25px;
+     font-family: 'AvenirNextCyr-Demi';
+     padding: 0;
+     margin: 0;
+     line-height: 25px;
+}
+ .social_icons {
+     float: left;
+     width: auto;
+     padding-left: 30px;
+}
+ .social_icons a {
+     float: left;
+     width: auto;
+     font-size: 20px;
+     color: #fff;
+     margin-right: 15px;
+     transition: all 0.3s ease;
+}
+ .social_icons a:hover {
+     color: #f9eb0c;
+     -webkit-transform: scale(1.4);
+     -ms-transform: scale(1.4);
+     transform: scale(1.4);
+}
+ .ft_links_container {
+     float: left;
+     width: 100%;
+     margin: 50px 0 0 0;
+}
+ .ft-block {
+     float: left;
+     width: 33%;
+}
+ .ft-block span {
+     float: left;
+     width: 100%;
+     font-size: 25px;
+     font-family: 'AvenirNextCyr-Demi';
+     padding: 0;
+     margin: 0 0 20px 0;
+     line-height: 25px;
+     color: #fff;
+}
+ .ft-block ul {
+     float: left;
+     width: 100%;
+     padding: 0;
+     margin: 0;
+     list-style: none;
+}
+ .ft-block ul li {
+     float: left;
+     width: 50%;
+     padding: 0;
+     margin: 0 0 8px 0;
+     list-style: none;
+}
+ .ft-block ul li a {
+     float: left;
+     width: auto;
+     font-size: 16px;
+     color: #ffffff;
+     position: relative;
+}
+ .ft-block ul li a:hover {
+     text-decoration: none;
+     color: #f9eb0c;
+     transition: all 200ms ease;
+}
+ .ft-block ul li a:before, .ft-block ul li a:after {
+     content: '';
+     position: absolute;
+     width: 0%;
+     height: 2px;
+     bottom: -2px;
+     background: #fff;
+}
+ .ft-block ul li a:before {
+     left: 0;
+}
+ .ft-block ul li a:after {
+     right: 0;
+     background: #fff;
+     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+ .ft-block ul li a:hover:before {
+     background: #f9eb0c;
+     width: 100%;
+     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+ .ft-block ul li a:hover:after {
+     background: transparent;
+     width: 100%;
+     transition: 0s;
+}
+ .ft-block p {
+     float: left;
+     width: 100%;
+     font-size: 16px;
+     color: #ffffff;
+     margin: 0;
+     padding: 0;
+     line-height: 26px;
+}
+ .ft-block-top {
+     float: left;
+     width: 100%;
+     margin-bottom: 15px;
+}
+ .ft_img {
+     float: left;
+     width: 40px;
+     margin-top: 5px;
+}
+ .ft_img .fa {
+     float: left;
+     font-size: 20px;
+     color: #fff;
+}
+ .block-details {
+     float: left;
+     width: 85%;
+     color: #fff;
+     font-size: 16px;
+     line-height: 28px;
+}
+ .block-details a {
+     color: #fff;
+     text-decoration: none;
+     position: relative;
+     width: auto;
+}
+ .block-details a:hover {
+     color: #f9eb0c;
+}
+ .ft-block.ft-block1 {
+     width: 37%;
+}
+ .ft-block.ft-block2 {
+     width: 37%;
+}
+ .ft-block.ft-block3 {
+     width: 25%;
+}
+ .block-details a:before, .block-details a:after {
+     content: '';
+     position: absolute;
+     width: 0%;
+     height: 2px;
+     bottom: -2px;
+     background: #fff;
+}
+ .block-details a:before {
+     left: 0;
+}
+ .block-details a:after {
+     right: 0;
+     background: #fff;
+     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+ .block-details a:hover:before {
+     background: #f9eb0c;
+     width: 100%;
+     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+ .block-details a:hover:after {
+     background: transparent;
+     width: 100%;
+     transition: 0s;
+}
+ .entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+     max-width: 100%;
+     width: 100%;
+}
+ .kitchen_corner {
+     height: auto;
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+ .kitchen_corner_container h2 {
+     float: left;
+     width: 100%;
+     font-size: 60px;
+     line-height: 60px;
+     margin: 0;
+     padding: 0;
+     font-family: 'Gilroy-Light';
+}
+ .kitchen_corner_para {
+     float: left;
+     width: 100%;
+}
+.kitchen_corner_para p br {
+	display: none;
+}
+ .kitchen_corner_para p {
+     float: left;
+     width: 100%;
+     color: #3d3d3d;
+     font-size: 18px;
+     line-height: 28px !important;
+     font-family: 'AvenirNextCyr-Light';
+     padding: 0;
+     margin: 15px 0 10px 0 !important;
+}
+ .kitchen_corner_container {
+     margin-top: 200px;
+     height: 751px;
+     position: relative;
+}
+ .angur_button button {
+     font-size: 16px !important;
+     font-family: 'AvenirNextCyr-Demi';
+     font-weight: normal;
+     padding-left: 40px !important;
+     padding-right: 40px !important;
+}
+ .kitchen_corner_container .wpb_column.vc_column_container.vc_col-sm-12 {
+     height: 100%;
+}
+ .dalbowl {
+     position: absolute;
+     width: auto;
+     left: 0;
+     bottom: -60px;
+     display: none;
+}
+ .angur_button {
+     float: left;
+     width: 100%;
+}
+ .home_about_us h1 {
+     float: left;
+     width: 100%;
+     margin: 0 !important;
+     padding: 0;
+     font-size: 90px;
+     color: #fff;
+     font-family: 'Gilroy-Light';
+     line-height: 90px;
+}
+ .home_about_us h3 {
+     float: left;
+     width: 100%;
+     color: #ffffff;
+     font-size: 33px;
+     line-height: 33px;
+     margin: 0;
+     padding: 0;
+     font-family: 'Gilroy-Light';
+}
+ .home_about_para p {
+     float: left;
+     width: 100%;
+     margin: 20px 0 30px 0 !important;
+     padding: 0;
+     font-size: 18px;
+     color: #fff;
+     line-height: 28px !important;
+     font-family: 'AvenirNextCyr-Demi';
+}
+ .home_about_left {
+     padding-top: 0;
+}
+ .yt_video {
+     width: 400px;
+     height: 275px;
+     float: right;
+     margin: 268px 0 0 0;
+}
+ .header-inner.section-inner {
+     max-width: 1200px;
+     width: 1200px;
+     padding-left: 15px;
+     padding-right: 15px;
+     position: relative;
+}
+ .primary-menu a {
+     display: block;
+     line-height: 17px;
+     text-decoration: none;
+     word-break: normal;
+     word-wrap: normal;
+     font-size: 17px;
+     
+     padding: 0;
+     font-family: 'AvenirNextCyr-Demi';
+     color: #fff !important;
+}
+ .primary-menu a:hover {
+     color:#f9eb0c !important;
+     text-decoration: none !important;
+}
+ .primary-menu > li {
+     margin: 0 25px 0 25px;
+     padding: 0;
+}
+ .primary-menu li:last-child a {
+     border: none;
+     width: 135px;
+     height: 31px;
+     background: #017a40;
+     border:2px solid #017a40;
+     border-radius: 135px;
+     color: #f9eb0c !important;
+     text-align: center;
+     line-height: 27px;
+     font-size: 15px;
+}
+ .primary-menu li:last-child a:hover {
+     text-decoration: none;
+}
+ .primary-menu li:nth-child(6) a {
+     border-right: none;
+}
+ .primary-menu li:last-child {
+     margin: 0;
+}
+ .toggle-wrapper.search-toggle-wrapper span.toggle-text {
+     display: none;
+}
+ .toggle-wrapper.search-toggle-wrapper::before {
+     display: none;
+}
+ .post-inner {
+     padding-top: 0;
+}
+ #site-header {
+     position: fixed;
+     width: 100%;
+     background: transparent;
+     transition: all 0.4s ease;
+}
+ .customer_care_number {
+     color: #fff;
+     font-size: 14px;
+     font-family: 'AvenirNextCyr-Demi';
+     float: right;
+     position: absolute;
+     right: 0;
+     top: 35px;
+}
+ .header-inner .toggle path {
+     fill: #fff;
+}
+ .header-navigation-wrapper {
+     margin-top: 40px;
+}
+ .toggle-wrapper.search-toggle-wrapper span.toggle-inner {
+     margin-top: -8px;
+}
+ .n2-ss-layer[data-sstype="slide"] , .n2-ss-slider .n2-ss-section-main-content{
+     padding: 0 !important;
+}
+ .n2-ss-slider .n2-ss-section-main-content {
+     width: 1200px;
+     margin: auto;
+     flex: inherit !important;
+     padding: 0 15px !important;
+}
+ .homepage_our_product h2 {
+     float: left;
+     width: 100%;
+     text-align: center;
+     font-size: 60px;
+     line-height: 60px;
+     font-family: 'Gilroy-Light';
+     margin: 0 0 25px 0 !important;
+     padding: 0;
+}
+ div#n2-ss-2 .n2-ss-slider-2 {
+     height: 100vh !important;
+}
+ .slider_btn a {
+     font-size: 21px !important;
+     font-family: 'Gilroy-Light' !important;
+}
+ .slider_content_box {
+     display: flex !important;
+     align-items: center;
+     height: 100vh;
+}
+ .small_logo {
+     display: none;
+     margin-right: 4rem;
+     max-width: 50%;
+     padding: 0;
+     text-align: left;
+}
+ .header-alt .header-titles-wrapper {
+     display: none;
+}
+ .header-alt .customer_care_number {
+     display: none;
+}
+ .header-alt .small_logo {
+     display: block;
+}
+ .header-alt {
+     background: #fff !important;
+     transition: all 0.4s ease;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+ .header-alt .header-inner.section-inner {
+     padding: 8px 0;
+}
+ .header-alt .header-navigation-wrapper {
+     margin-top: 6px;
+}
+ .header-alt .small_logo a img {
+     width: 120px;
+}
+ .footer_dal {
+     position: absolute;
+     right: 0;
+     bottom: -20px;
+     z-index: 1;
+}
+ .footer_dal img {
+     width: 400px;
+     height: auto;
+}
+ .slider_btn a {
+     color: #ffffff !important;
+     border: none !important;
+     background-color: #005e23 v;
+     background-image: -webkit-linear-gradient(left, #005e23 0%, #84cc0a 50%,#005e23 100%) !important;
+     background-image: linear-gradient(to right, #005e23 0%, #84cc0a 50%,#005e23 100%) !important;
+     -webkit-transition: all .2s ease-in-out !important;
+     transition: all .2s ease-in-out !important;
+     background-size: 200% 100% !important;
+     padding: 10px 50px 10px 50px;
+     border-radius: 100px;
+}
+ .slider_btn a:hover {
+     color: #ffffff !important;
+     background-color: #84cc0a !important;
+     border: none !important;
+     background-position: 100% 0 !important;
+}
+ .cursor {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: var(--width);
+     height: var(--height);
+     transform: translate(calc(var(--x) - var(--width) / 2), calc(var(--y) - var(--height) / 2));
+     transition-duration: 0.1s;
+     transition-timing-function: cubic-bezier(0.25, 0.25, 0.42, 1);
+     transition-property: width, height, transform;
+     z-index: 1;
+     pointer-events: none;
+     will-change: transform;
+}
+ @media (pointer: fine) {
+     .cursor {
+         display: block;
+		 z-index:10;
+    }
+}
+ .cursor::after {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     border-radius: var(--radius);
+     /*border: 2px solid #017a40;*/
+	 background:rgba(0,0,0,0.1);
+     opacity: var(--scale);
+     transform: scale(var(--scale));
+     transition: 0.3s cubic-bezier(0.25, 0.25, 0.42, 1) opacity, 0.3s cubic-bezier(0.25, 0.25, 0.42, 1) transform, 0.1s cubic-bezier(0.25, 0.25, 0.42, 1) border-radius;
+}
+ body:not(body:hover) .cursor::after {
+     opacity: 0;
+     transform: scale(0);
+}
+ .product_post {
+     float: left;
+     width: 100%;
+     margin-top: 100px;
+}
+ .product_post_left {
+     float: left;
+     width: 100%;
+}
+ .product_post_left h4 {
+     float: left;
+     width: 100% !important;
+     margin: 0 0 25px 0 !important;
+     padding: 0 !important;
+     font-weight: normal;
+     color: #3d3d3d;
+     font-size: 26px !important;
+     font-family: 'Gilroy-ExtraBold';
+}
+ .product_post_left p {
+     float: left;
+     width: 100% !important;
+     padding: 0 !important;
+     margin: 0 !important;
+     font-size: 17px !important;
+     color: #5e5e5f !important;
+     line-height: 22px !important;
+     text-align: right !important;
+     font-family: 'AvenirNextCyr-Light' !important;
+}
+ .product_post_center {
+     float: left;
+     width: 33%;
+     text-align: center;
+}
+ .product_post_center img {
+     width: 100%;
+     text-align: center;
+     float: left;
+}
+ .product_post_right {
+     float: left;
+     width: 100%;
+}
+ .product_post_right_block {
+     float: left;
+     width: 72%;
+     background: #f1f2f2;
+     border-radius: 200px;
+     height: 95px;
+     display: flex;
+     align-items: center;
+     padding: 0 35px;
+     margin: 7px 0;
+}
+ .product_post_right_block_img {
+     float: left;
+     width: auto;
+     margin-right: 20px;
+}
+ .product_post_right_block_img img {
+     float: left;
+     width: 50px !important;
+}
+ .product_post_right_block span {
+     float: left;
+     width: 100%;
+     font-size: 14px !important;
+     color: #5e5e5f;
+     font-family: 'AvenirNextCyr-Light' !important;
+     text-align: left;
+     line-height: 20px !important;
+}
+ .product_post_right_block p {
+     float: left;
+     width: 100% !important;
+}
+ .n2-ss-layer-col {
+     padding: 0 !important;
+}
+ .n2-ow .n2-ow.n2-bullet {
+     background: #d4d4d4 !important;
+     border-color: #d4d4d4 !important;
+     margin: 5px 4px !important;
+     padding: 6px !important;
+}
+ .n2-ow .n2-ow.n2-bullet.n2-active {
+     background: #017a40 !important;
+     border-color: #017a40 !important;
+}
+ .homepage_our_product {
+     padding: 50px 0 20px 0;
+     float: left;
+}
+ .insights {
+     padding: 80px 0 100px 0;
+     height: 885px;
+     margin: 0;
+     float: left;
+     width: 100%;
+}
+ h2.insights_title {
+     float: left;
+     width: 100%;
+     text-align: center;
+     font-size: 60px;
+     line-height: 60px;
+     font-family: 'Gilroy-Light';
+     margin: 100px 0 100px 0 !important;
+     padding: 0;
+}
+ .insights::before {
+     position: absolute;
+     background: url(/wp-content/uploads/2020/10/vector_left.png) repeat-y;
+     content: "";
+     left: 0;
+     top: 0;
+     height: 885px;
+     width: 451px;
+     background-size: 380px 746px;
+     background-position: top left;
+}
+ .insights::after {
+     position: absolute;
+     background: url(/wp-content/uploads/2020/10/vector_right.png) repeat-y;
+     content: "";
+     right: 0;
+     top: 0;
+     height: 885px;
+     width: 451px;
+     background-size: 380px 746px;
+     background-position: top right;
+}
+ .insights_slider .flexslider_slide.flexslider li .flex-caption {
+     float: right;
+     width: 46%;
+     background: transparent;
+     padding: 0;
+     min-height: 375px;
+}
+ .insights_slider .flexslider_slide.flexslider li .flex-caption h2 {
+     float: left;
+     width: 100%;
+     color: #3d3d3d;
+     font-size: 34px;
+     font-family: 'Gilroy-ExtraBold';
+     line-height: 44px;
+}
+ .insights_slider .flexslider_slide.flexslider li .flex-caption p {
+     font-size: 18px;
+     color: #131313;
+     float: left;
+     width: 100%;
+     font-family: 'Gilroy-Light';
+     line-height: 28px;
+     margin-top: 25px;
+}
+ .insights_slider .flexslider_slide.flexslider li .flex-caption .post-title , .insights_slider .flexslider_slide.flexslider li .flex-caption .post-title a {
+     font-size: 33px;
+     color: #131313;
+     float: left;
+     width: 100%;
+     font-family: 'Gilroy-Light';
+     line-height: 40px;
+     margin: 0;
+}
+ .insights_slider .flexslider_slide.flexslider {
+     border: none;
+     box-shadow: none;
+     background: transparent;
+     float: left;
+     width: 100%;
+}
+ .insights_slider h2.wpb_heading.wpb_posts_slider_heading {
+     display: none;
+}
+ ul.flex-direction-nav {
+     display: none;
+}
+ .insights_slider .flexslider .slides img {
+	width: 574px;
+	float: left;
+	min-height: 300px;
+	object-fit: cover;
+	object-position: center center;
+	margin: 0;
+	position: relative;
+	padding-right: 80px;
+	height: 300px;
+}
+ .insights_slider .flexslider .slides img::after {
+	content: "";
+	background-color: #f1f2f2;
+	width: 98%;
+	height: 98%;
+	position: absolute;
+	right: -40px;
+	bottom: -40px;
+	z-index: -9;
+}
+ .flex-control-paging li a {
+     background: #cacaca !important;
+     box-shadow: none !important;
+     width: 12px !important;
+     height: 12px !important;
+}
+ .flex-control-paging li a.flex-active {
+     background: #017a40 !important;
+}
+ .header-alt .primary-menu li:last-child a {
+     border: 2px solid #f9eb0c;
+}
+ .wpb_gallery.wpb_posts_slider.wpb_content_element.insights_slider {
+     float: none;
+     width: 100%;
+     margin: auto;
+}
+ .slider1_text {
+     margin-top: 10%;
+     width: 100%;
+     line-height: 52px !important;
+     text-align: center;
+     font-size: 46px !important;
+     color: #210808;
+     font-family: 'Gilroy-Light';
+     position: relative;
+}
+ .slider1_text_border {
+     float: none;
+     width: 773px;
+     margin: auto;
+     display: table;
+     margin-top: -70px;
+	 display:none;
+}
+ .slider1_text strong {
+     color: #017a40;
+     font-family: 'Gilroy-ExtraBold';
+}
+ .n2-ss-layer.n2-ow.slider1box {
+     height: 100vh;
+}
+ .slider3_text {
+     margin-top: 11%;
+     width: 100%;
+     line-height: 50px !important;
+     text-align: center;
+     font-size: 44px !important;
+     color: #210808;
+     font-family: 'Gilroy-Light';
+     position: relative;
+}
+ .slider3_text_border {
+     float: none;
+     width: 891px;
+     margin: auto;
+     display: table;
+     margin-top: -70px;
+	 display:none;
+}
+ .slider3_text strong {
+     color: #017a40;
+     font-family: 'Gilroy-ExtraBold';
+}
+ .media {
+     padding: 80px 0 0px 0;
+     margin: 0;
+     float: left;
+     width: 100%;
+}
+ h2.media_title {
+     float: left;
+     width: 100%;
+     text-align: center;
+     font-size: 60px;
+     line-height: 60px;
+     font-family: 'Gilroy-Light';
+     margin: 0 0 50px 0 !important;
+     padding: 0;
+}
+ .angur_button a , .angur_button a:focus {
+     font-size: 16px !important;
+     font-family: 'AvenirNextCyr-Demi';
+     font-weight: normal;
+     padding-left: 40px !important;
+     padding-right: 40px !important;
+     color: #fff !important;
+}
+ .vidoethumb img {
+     float: right;
+}
+ .vidoethumb {
+     float: left;
+     width: 100%;
+     margin: 242px 0 0 0;
+}
+ .overlay {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: rgba(0, 0, 0, 0.7);
+     transition: opacity 500ms;
+     visibility: hidden;
+     opacity: 0;
+     z-index: 9999;
+}
+ .overlay:target {
+     visibility: visible;
+     opacity: 1;
+}
+ .popup {
+     margin: 100px auto;
+     padding: 15px;
+     background: #fff;
+     border-radius: 0px;
+     width: 100%;
+     position: relative;
+     transition: all 5s ease-in-out;
+}
+ .popup .close {
+     position: absolute;
+     top: 5px;
+     right: -45px;
+     transition: all 200ms;
+     font-size: 60px;
+     font-weight: 100;
+     text-decoration: none !important;
+     color: #fff !important;
+     z-index: 9;
+     line-height: 25px;
+     font-family: 'Gilroy-Light';
+     opacity: 1 !important;
+}
+ .popup .close:hover {
+     color: #fff;
+}
+ .popup .content {
+     max-height: 30%;
+     overflow: auto;
+}
+ @media screen and (max-width: 700px){
+     .box{
+         width: 70%;
+    }
+     .popup{
+         width: 70%;
+    }
+}
+ .video-link {
+     float: none;
+     width: auto;
+     margin: auto;
+     display: table;
+     animation: ripple 3s linear infinite;
+     position: relative;
+     border-radius: 50%;
+}
+ .video-link::before, .video-link::after{
+     content:"";
+     position:absolute;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+     border-radius: 50%;
+     animation:inherit;
+     animation-delay:1s;
+}
+ .video-link::after {
+     animation-delay:2s;
+}
+ @keyframes ripple {
+     0% {
+         box-shadow: 0 0 0 .7rem rgba(1,122,164, 0.2);
+    }
+     100% {
+         box-shadow: 0 0 0 8rem rgba(1,122,164, 0);
+    }
+}
+ .video-link img {
+     float: right;
+}
+ .video-popup {
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 999;
+     width: 100%;
+     height: 100%;
+     background: rgba(0,0,0,0.7);
+     color: #fff;
+     padding: 30px;
+}
+ .videoblock {
+     width: 900px;
+     margin: auto;
+     position: absolute;
+     top: 50%;
+     left: 0;
+     right: 0;
+     transform: translateY(-50%);
+}
+ .video-close {
+     cursor: pointer;
+     position: absolute;
+     right: 0;
+     font-family: 'Graphik-Medium';
+     top: 50px;
+     font-size: 24px;
+}
+ .video-close img {
+     width: 20px;
+}
+ .popup iframe {
+     width: 870px !important;
+     height: 490px !important;
+}
+ .header-cart {
+     position: absolute;
+     right: 60px;
+     top: 75px;
+}
+ .header-cart a {
+     float: left;
+}
+ .header-cart a img {
+     float: left;
+     width: 27px;
+     filter: brightness(0) invert(1);
+}
+ .header-alt .header-cart {
+     top: 23px;
+     right: 45px;
+}
+ .header-alt .primary-menu a {
+     color: #5e5e5f !important;
+ }
+ .header-alt .primary-menu a:hover {
+     color: #017a40 !important;
+}
+ .header-alt .primary-menu li:last-child a {
+     border: none;
+     width: 135px;
+     height: 31px;
+     background: #017a40;
+     border: 2px solid transparent !important;
+     border-radius: 135px;
+     color: #f9eb0c !important;
+     text-align: center;
+     line-height: 27px;
+     font-size: 15px;
+}
+ .header-alt .header-inner .toggle path {
+     fill: #017a40;
+}
+ .header-alt .header-cart a img {
+     filter: inherit;
+}
+ .customslider .vc_column-inner {
+     padding: 0;
+}
+ .customslider .flexslider .slides img {
+     width: 100%;
+     display: block;
+     height: 100vh;
+     object-fit: cover;
+     object-position: center;
+}
+ .metaslider .caption-wrap {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     background: transparent !important;
+     color: white;
+     opacity: 1 !important;
+     margin: 0;
+     display: block;
+     width: 100%;
+     line-height: 1.4em;
+}
+ .metaslider .caption-wrap {
+     top: 0;
+}
+ .displaynone {
+     display: none;
+}
+ .customslider {
+     float: left;
+     width: 100%;
+     height: 100vh;
+}
+ .customslider .metaslider {
+     float: left;
+     width: 100% !important;
+     height: 100vh;
+}
+ .customslider .wpb_text_column.wpb_content_element {
+     float: left;
+     width: 100%;
+}
+ .customslider ul.flex-direction-nav {
+     display: block;
+}
+ .metaslider .flexslider:focus-within .flex-prev, .metaslider .flexslider:hover .flex-prev {
+     left: 50px !important;
+}
+ .metaslider .flexslider:focus-within .flex-next, .metaslider .flexslider:hover .flex-next {
+     right: 50px !important;
+}
+ .metaslider .flex-control-nav {
+     bottom: 0px !important;
+     display: none;
+}
+ .metaslider .caption-wrap .caption img {
+     width: auto;
+     height: auto !important;
+}
+ .customslider .flex-viewport {
+     overflow: inherit !important;
+}
+ .metaslider .flexslider .flex-direction-nav li a {
+     width: 45px !important;
+     height: 45px !important;
+}
+ .second_slider img {
+     width: 60% !important;
+     margin-left: 100px;
+     float: left;
+}
+ .second_slider img {
+     width: 58% !important;
+     float: left;
+}
+ .slider_btn {
+     float: left;
+     width: 100%;
+     margin: 50px auto auto auto;
+}
+ .second_slider {
+     float: none;
+     width: 1200px;
+     height: auto;
+     margin: auto;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+ .angur_button button , .angur_button a , .slider_btn a{
+     background-image: none !important;
+     position: relative;
+     background: #005e23 !important;
+}
+ .angur_button button:hover , .angur_button a:hover , .slider_btn a:hover{
+     background: #f9eb0c !important;
+     color: #000 !important;
+}
+ .angur_button button::after , .angur_button a::after{
+     content: '»';
+     position: absolute;
+     opacity: 0;
+     top: 7px;
+     right: -20px;
+     transition: 0.5s;
+     font-size: 24px;
+}
+ .angur_button button:hover , .angur_button a:hover{
+     padding-right: 24px;
+     padding-left:8px;
+}
+ .angur_button button:hover:after , .angur_button a:hover:after{
+     opacity: 1;
+     right: 22px;
+}
+ .slider_btn a:hover{
+     padding-right: 50px;
+     padding-left:50px;
+}
+ .slider_btn a::after {
+     content: '»';
+     position: absolute;
+     opacity: 0;
+     top: 9px;
+     right: -20px;
+     transition: 0.5s;
+     font-size: 32px;
+}
+ .slider_btn a:hover:after {
+     opacity: 1;
+     right: 30px;
+}
+ .fts-jal-single-fb-post:nth-child(4), .fts-jal-single-fb-post:nth-child(5), .fts-jal-single-fb-post:nth-child(6) {
+     display: none;
+}
+ .Main_Page_Banner {
+     float: left;
+     width: 100% !important;
+     height: 70vh;
+}
+ .container {
+     max-width: 1200px !important;
+}
+ .page_section_title {
+     float: left;
+     width: 100%;
+     margin-bottom: 0;
+}
+ .page_section_title p {
+     font-size: 60px;
+     color: #131313;
+     float: left;
+     width: 100%;
+     text-align: center;
+     font-family: 'Gilroy-Light';
+}
+ .what-we-do-para {
+     float: left;
+     width: 100%;
+     margin-bottom: 70px;
+}
+ .what-we-do-para p {
+     float: left;
+     width: 100%;
+     text-align: center;
+     font-size: 28px;
+     color: #017a40;
+     font-family: 'Gilroy-Light';
+}
+ .page-para p {
+     float: left;
+     width: 100%;
+     font-size: 18px;
+     line-height: 28px;
+     font-family: 'AvenirNextCyr-Light';
+     text-align: center;
+     margin: 30px 0 0 0;
+}
+ .what_we_do_image {
+     float: left;
+     width: 100%;
+}
+ .Main_Page_Banner .vc_column-inner {
+     padding: 0 !important;
+     margin: 0 !important;
+}
+ .page_name_container {
+     display: flex;
+     align-items: center;
+     height: 70vh;
+     float: left;
+     width: 100%;
+}
+ .page_name {
+     float: left;
+     width: 100%;
+     color: #ffffff;
+     font-size: 89px;
+     margin: 0 !important;
+     padding: 0;
+     font-family: 'Gilroy-ExtraBold' !important;
+}
+ .page_name_para {
+     float: left;
+     width: 100%;
+}
+ .page_name_para p {
+     float: left;
+     width: 100%;
+     color: #fff;
+     font-size: 20px;
+     line-height: 33px;
+     font-family: 'AvenirNextCyr-Light';
+}
+ .why_choose_us {
+     height: 1017px;
+     float: left;
+     width: 100%;
+     padding-top: 80px;
+     margin-top: 50px;
+}
+ .what_we_do_section.why_choose_us .page_section_title p {
+     font-size: 60px;
+     color: #fff;
+     float: left;
+     width: 100%;
+     text-align: center;
+     font-family: 'Gilroy-Light';
+}
+ .what_we_do_section.why_choose_us .what-we-do-para p {
+     float: left;
+     width: 100%;
+     text-align: center;
+     font-size: 28px;
+     color: #f9eb0c;
+     font-family: 'Gilroy-Light';
+}
+ .what_we_do_section.why_choose_us .what-we-do-para {
+     float: left;
+     width: 100%;
+     margin-bottom: 0;
+}
+ .what_we_do_section.why_choose_us .page-para p {
+     color: #fff;
+}
+ .images_container {
+     margin-top: 90px;
+}
+/****Start Insight page CSS****/
+ .insight-blog .owl-carousel .owl-item .vc_grid-item:first-child {
+     width: 66% !important;
+}
+/****End Insight page CSS****/
+/****Start Recipe page CSS****/
+ .recipe-title p {
+     font-size: 33px;
+     color: #131313;
+     float: left;
+     width: 100%;
+     font-family: 'Gilroy-Light';
+     line-height: 37px;
+	 margin:45px 0 0 0;
+}
+ .recipe-description p {
+    font-size: 18px;
+    color: #131313;
+    float: left;
+    width: 90%;
+    font-family: 'Gilroy-Light';
+    line-height: 28px;
+    margin-top: 0px;
+}
+.learn-more-btn a, .insight-blog .vc_btn3-container a {
+	font-family: 'AvenirNextCyr-Demi';
+	font-size: 14px;
+	line-height: 20px;
+	color: #5e5e5f !important;
+	background-color: #f1f2f2 !important;
+	padding: 12px 40px;
+	border-radius: 35px;
+	margin-top: 42px;
+	position: relative;
+}
+ .left-img-section .vc_single_image-wrapper {
+     position: relative;
+}
+ .left-img-section .vc_single_image-wrapper:after {
+     content: "";
+     background-color: #f1f2f2;
+     width: 98%;
+     height: 98%;
+     position: absolute;
+     right: -40px;
+     bottom: -40px;
+     z-index: -9;
+}
+ .left-img-section.right-img-section .vc_single_image-wrapper {
+     float: right;
+}
+ .left-img-section.right-img-section .vc_figure {
+     float: right;
+     width: 100%;
+}
+ .left-img-section.right-img-section .vc_single_image-wrapper:after {
+     left: -40px;
+}
+ .recipe-title {
+     float: left;
+     width: 100%;
+     margin-bottom: 15px;
+}
+ .recipe-main-blog {
+     padding: 65px 0;
+     border-top: 1px solid #dddddd;
+}
+ .recipe-description, .learn-more-btn {
+     float: left;
+     width: 100%;
+     margin-bottom: 10px;
+}
+ .learn-more-btn {
+     float: left;
+     width: 100%;
+}
+ .right-img-section .wpb_single_image {
+     float: left;
+     width: 100%;
+}
+ .left-img-section.right-img-section .wpb_single_image {
+     float: right;
+}
+ .recipe-main-blog:first-child {
+     border-top: 0;
+}
+ .insight-blog .vc_custom_heading p {
+	font-size: 18px;
+	color: #131313;
+	float: left;
+	width: 100%;
+	font-family: 'AvenirNextCyr-Light';
+	line-height: 28px;
+	margin-top: 10px;
+}
+ .insight-blog h4 {
+     font-size: 26px;
+     color: #131313;
+     float: left;
+     width: 100%;
+     font-family: 'Gilroy-Light';
+     line-height: 34px;
+     margin: 0;
+}
+ .insight-blog .vc_gitem-zone.vc_gitem-zone-c {
+     background-color: #ffffff !important;
+     padding: 20px;
+}
+ .insight-blog .vc_grid-item-mini {
+     border: 1px solid #ececec;
+     /*min-height: 840px;*/
+}
+ .insight-blog .vc_btn3-container.vc_btn3-left {
+     text-align: left;
+     margin: 0;
+}
+.insight-blog .owl-carousel .owl-item .vc_grid-item:first-child .vc_grid-item-mini {
+	min-height: 757px;
+}
+
+/****CSS by Parag****/
+.map_location {
+        align-self: flex-end;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: bottom;
+        animation-name: bounce-1;
+        animation-timing-function: linear;
+   }
+
+
+@keyframes bounce-1 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-8px); }
+        100% { transform: translateY(0); }
+    }
+
+.kitchen_corner_para p {color:#fff;}
+.kitchen_corner_container {margin-top:300px;}
+.Main_Page_Banner.Recipe_Main_Page_Banner {
+	background-position: bottom !important;
+	height: 85vh;
+	margin-bottom: 0;
+}
+.video { height:auto;}
+
+
+.homepage_our_product h2 {margin:0 0 15px 0 !important;}
+.what_we_do_image.who_we_are_image img {
+	width: 426px;
+}
+.Main_Page_Banner {
+	float: left;
+	width: 100% !important;
+	height: 80vh;
+}
+
+.ft_img {
+	float: left;
+	width: 50px;
+	margin-top: 10px;
+	height: 50px;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 60px;
+	margin-right: 15px;
+}
+.ft_img .fa {
+	float: none;
+	font-size: 26px;
+	color: #fff;
+}
+.block-details {
+	float: left;
+	width: 78%;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 10px;
+}
+.ft-block-top.email .ft_img {
+	line-height: 55px;
+}
+.ft_img .fa.fa-envelope {
+	font-size: 24px;
+}
+
+
+
+
+/****End Recipe page CSS****/
+/*contact us*/
+ h2.locate-us-title {
+     float: left;
+     width: 100%;
+     font-size: 30px;
+     color: #3d3d3d;
+     font-family: 'Gilroy-Light' !important;
+     margin: 0 0 20px 0;
+     padding: 0;
+}
+ .contact-title p {
+     font-size: 60px;
+     line-height: 65px;
+     color: #3d3d3d;
+     font-family: 'Gilroy-Light';
+     float: left;
+     width: 100%;
+     text-align: center;
+     padding-bottom: 25px;
+     position: relative;
+}
+ .contact-des p {
+     font-size: 18px;
+     line-height: 28px;
+     color: #5e5e5f;
+     font-family: 'AvenirNextCyr-Light';
+     float: left;
+     width: 100%;
+     text-align: center;
+     position: relative;
+     padding-bottom: 50px;
+}
+/*.contact-title p:after {
+     content: "";
+     background-color: #f0f1f3;
+     position: absolute;
+     width: 230px;
+     height: 4px;
+     bottom: 40px;
+     left: 0;
+     right: 0;
+     margin: auto;
+}
+*/
+ .contact-form-block {
+     float: left;
+     width: 100%;
+     margin: 5px 0 50px 0;
+}
+ .contact-form {
+     width: 85%;
+     margin: auto;
+}
+ .contact-form input, .contact-form textarea {
+     background-color: #f0f1f3;
+     color: #5e5e5f;
+     font-size: 17px;
+     line-height: 22px;
+     border: 1px solid #f0f1f3;
+     padding: 15px 15px;
+     font-family: 'AvenirNextCyr-Light';
+}
+ .contact-form br {
+     display: none;
+}
+ .contact-form span {
+     float: left;
+     width: 48%;
+     padding: 10px 15px;
+}
+ .contact-form span:nth-child(11), .contact-form span:nth-child(9) {
+     width: 96%;
+}
+ .submit-btn {
+     float: left;
+     width: 100%;
+     padding: 30px 50px 0 0;
+}
+.submit-btn input {
+	width: auto;
+	float: right;
+	background-color: #017a40;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: capitalize;
+	border-radius: 40px;
+	padding: 13px 40px;
+	font-family: 'AvenirNextCyr-Demi';
+	position: relative;
+	border-color: #017a40;
+}
+.submit-btn input:hover {border-color: #f9eb0c;}
+ .locate-us h2, .locate-us-title {
+     color: #3d3d3d;
+     font-size: 30px;
+     line-height: 34px;
+     font-family: 'Gilroy-Light';
+     float: left;
+     width: 100%;
+}
+ .address-des p {
+     color: #5e5e5f;
+     font-size: 18px;
+     line-height: 28px;
+     font-family: 'AvenirNextCyr-Light';
+     float: left;
+     width: 100%;
+}
+ .address-des {
+     float: left;
+     width: 100%;
+     margin: 0;
+     padding-bottom: 40px;
+     border-bottom: 1px solid #e3e3e3;
+     margin-bottom: 30px;
+}
+ .address-detail {
+     float: left;
+     width: 100%;
+}
+ .address-detail img {
+     float: left;
+     margin-top: 8px;
+}
+ .detail-title {
+     float: left;
+     color: #3d3d3d;
+     font-family: 'Gilroy-Light';
+     font-size: 20px;
+     line-height: 24px;
+     padding: 0 30px 0 20px;
+     min-width: 120px;
+}
+ .detail-des, .detail-des a {
+     float: left;
+     color: #3d3d3d;
+     font-family: 'Gilroy-ExtraBold';
+     font-size: 18px;
+     line-height: 22px;
+}
+ .contact-right-section {
+     padding-left: 35px;
+}
+ .locate-us {
+     padding: 30px 0 50px 0;
+}
+ .mandatory-text p {
+     font-size: 16px;
+     line-height: 16px;
+     float: left;
+     width: 100%;
+     font-family: 'AvenirNextCyr-Light';
+     color: #b40000;
+     padding-left: 6em;
+}
+ .mandatory-text {
+     float: left;
+     width: 100%;
+     margin: 20px 0 0 0;
+}
+ .contact-form span.wpcf7-not-valid-tip {
+     font-size: 14px;
+     line-height: 18px;
+     padding: 10px 0 5px 0;
+     font-family: 'AvenirNextCyr-Light';
+     float: left;
+     width: 100%;
+}
+ .wpcf7-response-output {
+     float: left;
+     width: 79%;
+     margin: auto;
+     border-color: #00ad5a !important;
+     font-size: 16px;
+     line-height: 20px;
+     font-family: 'AvenirNextCyr-Light';
+}
+ .wpcf7 form .wpcf7-response-output {
+     margin: 2em 0 1em 6.5em;
+}
+ .submit-btn input:hover {
+     background: #f9eb0c !important;
+     color: #000 !important;
+	 text-decoration: none;
+}
+ .submit-btn input:hover:after {
+     opacity: 1;
+     right: 22px;
+}
+ .submit-btn input::after {
+     content: '»';
+     position: absolute;
+     opacity: 0;
+     top: 7px;
+     right: -20px;
+     transition: 0.5s;
+     font-size: 24px;
+}
+ .page_name_para p {
+     float: none;
+     color: #fff;
+     font-size: 20px;
+     line-height: 33px;
+     font-family: 'AvenirNextCyr-Light';
+     width: 64%;
+     margin: auto;
+     display: table;
+}
+/*contact us*/
+ .insight-blog .vc_btn3-container a {
+     margin-top: 5px;
+}
+ .insights_slider .flexslider .slides li::after {
+	content: "";
+	background-color: #f1f2f2;
+	width: 44%;
+	height: 83%;
+	position: absolute;
+	right: 28.5em;
+	bottom: 28px;
+	z-index: -9;
+}
+ .insights_slider .flexslider .slides li {
+     position: relative;
+}
+ .insights_slider .wpb_gallery .wpb_flexslider .flex-control-nav {
+     margin-top: 50px;
+}
+ .slider_bottom_image {
+     float: left;
+     position: absolute;
+     bottom: 0px;
+     left: 0;
+     width: 100%;
+     max-width: 100%;
+     margin: 0;
+}
+ .slider_bottom_image img {
+     width: 100%;
+     height: auto;
+}
+ .slider_bottom_image .wpb_wrapper.vc_figure {
+     float: left;
+     width: 100%;
+}
+ .slider_bottom_image .vc_single_image-wrapper.vc_box_border_grey {
+     float: left;
+     width: 100%;
+}
+ .kitchen_corner.kitchen_corner_video_container {
+     float: left;
+     width: 100%;
+     position: relative;
+     height: auto;
+}
+ .video {
+     float: left;
+     width: 100%;
+     height: auto;
+     position: relative;
+     background: url(https://www.angur.com/wp-content/uploads/2020/10/videobg.jpg) no-repeat;
+     background-size: cover;
+     margin-top: 0;
+     background-position: center;
+     padding: 0;
+}
+/*.video::before {
+     content: "";
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     left: 0;
+     top: 0;
+}
+*/
+ .video video {
+     float: left;
+     width: 100% !important;
+     height: 100% !important;
+     object-fit: cover;
+}
+ .kitchen_corner.kitchen_corner_video_container .vc_column-inner {
+     padding: 0;
+}
+ .kitchen_corner.kitchen_corner_video_container .wpb_raw_code.wpb_content_element.wpb_raw_html {
+     float: left;
+     width: 100%;
+     margin: 0;
+}
+ .about_us_container {
+     position: absolute;
+     left: 0;
+     right: 0;
+     margin: auto;
+     height: 100%;
+     display: flex;
+     align-items: center;
+}
+ .insights {
+     float: left;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+}
+ .video_bottom {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+}
+ .video_bottom img {
+     float: left;
+     width: 100%;
+     height: 62px;
+}
+ .video_top {
+     position: absolute;
+     top: 0;
+     width: 100%;
+}
+ .video_top img {
+     float: left;
+     width: 100%;
+     height: 62px;
+}
+ .customslider .wpb_text_column.wpb_content_element {
+     float: left;
+     width: 100%;
+     margin: 0;
+}
+ .Product_Block {
+     background: #fafafa;
+     border: 1px solid #eff0ed;
+     text-align: center;
+     padding-top: 30px;
+     padding-bottom: 25px;
+     width: 22.4%;
+     margin: 14px 15px;
+}
+ .Product_image {
+     margin-bottom: 20px;
+}
+ .Product_Name p {
+     float: left;
+     width: 100%;
+     font-size: 20px;
+     font-family: 'Gilroy-Light';
+     color: #1f1f1f;
+	 text-align: center;
+}
+ .n2-section-smartslider.fitvidsignore.n2_clear {
+     display: none;
+}
+
+.learn-more-btn a:hover, .insight-blog .vc_btn3-container a:hover,  .submit-btn input:hover {
+    background: #f9eb0c !important;
+    color: #000 !important;
+}
+
+
+.learn-more-btn a:after, .insight-blog .vc_btn3-container a:after,  .submit-btn input:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 10px;
+    right: -20px;
+    transition: 0.5s;
+    font-size: 24px;
+}
+
+.learn-more-btn a:hover:after, .insight-blog .vc_btn3-container a:hover:after,  .submit-btn input:hover:after {
+    opacity: 1;
+    right: 22px;
+}
+
+
+/*17/10/2020*/
+.post-template-default .entry-content {
+	max-width: 1200px;
+	margin: auto;
+}
+.singular.post-template-default .featured-media-inner {
+	position: relative;
+	left: 0;
+	width: 100%;
+	max-width: 100%;
+}
+.singular.post-template-default .featured-media-inner img {
+	width: 100%;
+	height: 80vh;
+	object-fit: cover;
+	object-position: center;
+	margin-bottom:80px;
+}
+.post-template-default .entry-content h2 {
+	max-width: 1200px !important;
+	color: #fff;
+	position: absolute;
+	font-size: 72px;
+	line-height:72px;
+	
+	font-family: 'Gilroy-ExtraBold';
+	height: auto;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.post-template-default .entry-content h4 {
+	max-width: 1200px !important;
+	color: #fff;
+	position: absolute;
+	font-size: 32px;
+	line-height:32px;
+	top: 0;
+	font-family: 'Gilroy-Light';
+	height: auto;
+	text-align: center;
+	position: absolute;
+	top: 44%;
+	margin:0;
+	padding:0;
+	transform: translateY(-50%);
+}
+.post-template-default .entry-content p, .recipe-description-detail p {
+	font-size: 18px;
+	color: #131313;
+	float: left;
+	width: 100%;
+	font-family: 'AvenirNextCyr-Light';
+	line-height: 28px;
+	margin-top: 10px;
+}
+.comments-wrapper.section-inner {
+	display: none;
+}
+/*17/10/2020*/
+
+.recipe-main-blog:hover img {
+    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    transform: scale(0.96);
+}
+
+.recipe-main-blog img {
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+}
+
+.recipe-main-blog:hover .left-img-section .vc_single_image-wrapper:after {
+    background-color: #fff99b;
+	-webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+}
+
+/* Purvank Add CSS */
+.product_listing .woocommerce.columns-3 ul.products li.product {
+	position: relative;
+	border: 1px solid #f1f2f2;
+	padding: 15px;
+	transition: box-shadow 0.3s 0s ease;
+	text-align: center;
+}
+.product_listing .product:hover {
+    box-shadow: 0px 3px 11px -2px rgba(0,0,0,0.28);
+	transition: box-shadow 0.3s 0s ease;
+}
+.product_listing .product:hover img {
+    background: rgb(255,255,255);
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(214,214,214,1) 100%);
+	transition: background 0.9s 0s ease;
+}
+.product_listing .woocommerce ul.products li.product a h2 {
+	color: #000;
+	line-height: 25px;
+	padding: 0;
+	margin-bottom: 0;
+	font-family: 'Gilroy-Light';
+	font-size: 22px;
+}
+.product_listing .woocommerce ul.products li.product .price {
+    display: none;
+}
+.product_listing .woocommerce ul.products li.product a.add_to_cart_button {
+	font-size: 14px;
+	line-height: 22px;
+	color: #fff;
+	text-transform: capitalize;
+	font-family: 'AvenirNextCyr-Light';
+	background: #017a40;
+	border-radius: 28px;
+	padding: 12px 28px;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+.product_listing .woocommerce ul.products li.product a.add_to_wishlist {
+	background: transparent;
+}
+.product_listing .woocommerce ul.products li.product a.add_to_wishlist i {
+	font-size: 28px;
+}
+.product_listing .yith-wcwl-add-to-wishlist {
+	position: absolute;
+	top: 0px;
+	right: 0;
+}
+.product_listing .woocommerce ul.products li.product a img {
+	transition: background 0.9s 0s ease;
+	padding: 25px;
+	height: 300px;
+	object-fit:contain;
+}
+.product_listing .c_short_description p {
+	font-size: 14px;
+	line-height: 25px;
+	color: #5e5e5f;
+	font-family: 'AvenirNextCyr-Light';
+	border-bottom: 1px solid #f1f2f2;
+	padding-bottom: 18px;
+	margin: 2px 0 10px 0;
+}
+.product_listing .woocommerce ul.products li.product strong {
+    display: none;
+}
+.c_product_details {
+	position: relative;
+}
+.c_product_details p strong {
+	display: block;
+	font-size: 36px;
+	line-height: 38px;
+	font-family: 'Gilroy-ExtraBold';
+	font-weight: normal;
+}
+.c_product_details p {
+	display: block;
+	font-size: 16px;
+	line-height: 30px;
+	font-family: 'AvenirNextCyr-Light';
+}
+.c_product_details .yith-wcwl-add-to-wishlist {
+	position: absolute;
+	top: -5px;
+	right: 0;
+}
+.c_product_details .yith-wcwl-add-to-wishlist .yith-wcwl-add-button .add_to_wishlist, 
+.woocommerce div.product .c_product_details form.cart .single_add_to_cart_button{
+	font-size: 14px;
+	line-height: 14px;
+	color: #5e5e5f;
+	text-transform: capitalize;
+	font-family: 'AvenirNextCyr-Light';
+	font-weight: normal;
+	background: #f0f1f3;
+	border-radius: 20px;
+	padding: 12px 28px;
+}
+.c_product_details .yith-wcwl-add-to-wishlist .yith-wcwl-add-button .add_to_wishlist {
+	padding: 16px 30px;
+	border-radius: 30px;
+}
+.c_product_details table.variations {
+	margin: 0 0 10px 0;	
+}
+.woocommerce div.product .c_product_details form.cart .variations td.label {
+	padding: 0;
+	width: 100px;
+	float: left;
+}
+.woocommerce div.product .c_product_details form.cart .variations td.label label,
+.woocommerce div.product .c_product_details form.cart .variations td.value select {
+	font-size: 16px;
+	line-height: 16px;
+	color: #f07b12;
+	font-weight: normal;
+	font-family: 'AvenirNextCyr-Light';
+	outline: 0;
+}
+.woocommerce div.product .c_product_details form.cart .variations td.value {
+	padding: 0;
+	width: 300px;
+	float: left;
+}
+.c_product_details table.variations tr td.value select {
+	border: 0;
+}
+.c_product_details .input-text.qty.text {
+    background: #f0f1f3;
+    width: 100px;
+    padding: 12px 15px;
+    border: 0;
+    border-radius: 30px;
+	font-family: 'AvenirNextCyr-Light';
+}
+.c_product_details form.cart .single_add_to_cart_button {
+    background-color: #f0f1f3;
+}
+.woocommerce div.product .c_product_details form.cart .single_add_to_cart_button {
+	opacity:1;
+	padding: 16px 40px;
+	border-radius: 30px;
+	margin-left: 10px;
+}
+.c_product_details .woocommerce-variation.single_variation {
+	display: flex;
+}
+.woocommerce div.product .c_product_details span.price {
+    color: #017a40;
+    font-size: 22px;
+    font-family: 'AvenirNextCyr-Demi';
+    margin-left: 6px;
+}
+.c_product_details .woocommerce-variation-description p {
+    font-size: 20px;
+    color: #5e5e5f;
+    font-family: 'AvenirNextCyr-Light';
+}
+.woocommerce div.product div.images .c_product_image a {
+    background: #f5f5f5;
+    width: 100%;
+    float: left;
+}
+.woocommerce div.product div.images .c_product_image img {
+    padding: 50px;
+    background: #f5f5f5;
+	width: auto;
+	margin: auto;
+}
+.product_banner_bg {
+	width: 100%;
+    height: 80vh;
+    float: left;
+    margin-top: -10px;
+    background-image: url(https://www.angur.com/wp-content/uploads/2020/10/Product-banner-1.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    text-align: center;
+    display: table;
+    margin-bottom: 100px;
+}
+.online_txt {
+	display: table-cell;
+	vertical-align: middle;
+}
+.breadcrumbs .post-product {
+    font-size: 14px;
+    line-height: 18px;
+    color: #5e5e5f;
+    font-family: 'AvenirNextCyr-Light';
+}
+.woocommerce div.product .c_product_details form.cart .reset_variations {
+	color: #ff0707;
+	font-size: 12px;
+}
+.c_product_description {
+    border: 1px solid #f5f5f5;
+	margin: 30px 0 0px 0;
+	float: left;
+	width: 100%;
+}
+.woocommerce div.product .c_product_description ul.tabs::before {
+	border-bottom: 0;
+}
+.woocommerce div.product .c_product_description ul.tabs.wc-tabs {
+    padding: 0;
+    background: #f5f5f5;
+}
+.woocommerce div.product .c_product_description ul.tabs::before {
+	border-bottom: 0;
+}
+.woocommerce div.product .c_product_description ul.tabs li.active {
+	z-index:0;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+	font-size: 20px;
+	line-height: 33px;
+}
+.woocommerce div.product .c_product_description ul.tabs li.active a {
+	color: #017a40;
+	font-size: 20px;
+	line-height: 33px;
+}
+.woocommerce div.product .c_product_description ul.tabs li, 
+.woocommerce div.product .c_product_description ul.tabs li::before {
+	border-radius: 0;
+	border: 0;
+}
+.woocommerce div.product .c_product_description ul.tabs li::before {
+	border-bottom-right-radius: 0;
+	border-width: 0;
+}
+.woocommerce div.product .c_product_description ul.tabs li::after {
+	border-bottom-left-radius: 0;
+	border-width: 0;
+}
+.woocommerce div.product .c_product_description ul.tabs li {
+	background-color: transparent;	
+	font-family: 'AvenirNextCyr-Demi';
+	padding: 5px 40px;
+}
+.woocommerce div.product .c_product_description ul.tabs li::before,
+.woocommerce div.product .c_product_description ul.tabs li::after,
+.woocommerce div.product .c_product_description ul.tabs li.active::before{
+	box-shadow: none;
+}
+.woocommerce div.product .c_product_description .panel {
+	padding: 5px 38px;
+}
+.woocommerce div.product .c_product_description .panel h2 {
+    display: none;
+}
+.woocommerce div.product .c_product_description .panel p {
+    font-family: 'AvenirNextCyr-Light';
+    font-size: 16px;
+    line-height: 26px;
+    color: #5e5e5f;
+}
+.c_related_product {
+	width: 100%;
+	float: left;
+}
+.c_related_product h2 {
+    text-align: center;
+    margin: 0px 0 30px 0;
+    font-family: 'Gilroy-Light';
+    font-size: 50px;
+    line-height: 55px;
+	letter-spacing: 0px;
+}
+.woocommerce .c_related_product ul.products li.product {
+    position: relative;
+    border: 1px solid #f1f2f2;
+    padding: 15px;
+    transition: box-shadow 0.3s 0s ease;
+    text-align: center;
+	width: 30.75%;
+}
+.woocommerce .c_related_product ul.products li.product a img {
+	padding: 25px;
+	height: 300px;
+	object-fit: contain;
+	background: rgb(255,255,255);
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(214,214,214,1) 100%);
+}
+.c_related_product .c_short_description p, .woocommerce .c_related_product ul.products li.product .price,
+.woocommerce .c_related_product ul.products li.product .button, .c_product_details .product_meta 
+{
+    display: none;
+}
+.woocommerce .c_related_product ul.products li.product .woocommerce-loop-product__title {
+    line-height: 25px;
+    padding: 0;
+    color: #000;
+    font-size: 25px;
+}
+.product-template-default .pagination-single.section-inner {
+    display: none;
+}
+.product_listing .yith-wcwl-add-button span {
+    display: none;
+}
+.woocommerce .c_related_product ul.products li.product:nth-child(3),
+.woocommerce .c_related_product ul.products li.product:nth-child(6),
+.woocommerce .c_related_product ul.products li.product:nth-child(9){
+    margin-right: 0;
+}
+.breadcrumbs {
+    display: none;
+}
+.c_product_details .input-text.qty.text, .woocommerce div.product .c_product_details form.cart .single_add_to_cart_button {
+    outline: 0;
+}
+.product_listing .c_short_description .para {
+    display: none;
+}
+.header-alt .header-cart, .header-cart, .c_product_details .price, 
+.c_product_details table.variations, .c_product_details .yith-wcwl-add-to-wishlist, .woocommerce div.product .c_product_details form.cart {
+	display: none;
+}
+.c_product_details .para {
+    padding-top: 20px;
+    border-top: 1px solid #f5f5f5;
+    margin-top: 30px;
+}
+.pswp, .pswp--open, .woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+	display: none;
+}
+.display_none {
+	display:none;
+}
+.header-navigation-wrapper .header-toggles.hide-no-js {
+    margin-left: 0;
+}
+/* Purvank Add CSS */
+
+
+.pagination-single-inner a {
+	color: #000;
+	font-family: 'Gilroy-ExtraBold';
+}
+.singular.post-template-default .featured-media-inner::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 80vh;
+	content: "";
+	background: rgba(0,0,0,0.45);
+	width: 100%;
+}
+.wpb_gallery .wpb_flexslider .flex-control-nav {
+	bottom: auto;
+	top: 100%;
+	margin-top: 50px;
+}
+
+.Product_Block:hover img {
+	-webkit-transform: scale(0.85);
+	transform: scale(0.85);
+}
+
+.Product_Block img {
+	-webkit-transition: 0.6s ease;
+transition: 0.6s ease;
+}
+
+.Product_image { overflow:hidden;}
+
+.primary-menu li.current-menu-item > a, .primary-menu li.current-menu-item > .link-icon-wrapper > a {
+	text-decoration: none;
+	color: #017a40 !important;
+}
+
+.primary-menu a::before{
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background: #fff;
+  transition: 0.5s transform ease;
+  transform: scale3d(0,1,1);
+  transform-origin: 0 50%;
+}
+.primary-menu a:hover::before{
+  transform: scale3d(1,1,1);
+}
+
+.reset-list-style a::before{
+  transform-origin: 50% 50%;
+  background: #f9eb0c;
+}
+
+.header-alt .primary-menu a::before{
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background: #fff;
+  transition: 0.5s transform ease;
+  transform: scale3d(0,1,1);
+  transform-origin: 0 50%;
+}
+.header-alt .primary-menu a:hover::before{
+  transform: scale3d(1,1,1);
+}
+
+.header-alt .reset-list-style a::before{
+  transform-origin: 50% 50%;
+  background: #017a40;
+}
+
+.primary-menu li.current-menu-item > a, .primary-menu li.current-menu-item > .link-icon-wrapper > a {
+	text-decoration: none;
+	color: #f9eb0c !important;
+}
+
+.header-alt .primary-menu li.current-menu-item > a, .header-alt .primary-menu li.current-menu-item > .link-icon-wrapper > a {
+	text-decoration: none;
+	color: #017a40 !important;
+}
+
+.videotag {
+    position: relative;
+    z-index: 1;
+}
+
+.c_product_details p strong {
+    display: block;
+    font-size: 48px;
+    line-height: 48px;
+    font-family: 'Gilroy-Light';
+    font-weight: normal;
+    color: #131313;
+    margin-bottom:5px;
+}
+
+
+
+
+.slider-4 p {
+	font-size: 52px;
+	line-height: 58px;
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-family: 'Gilroy-Light';
+	padding-top: 24%;
+}
+
+
+.slider-4 p span {
+	font-family: 'Gilroy-ExtraBold';
+	color: #f9eb0c;
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: 0 !important;
+}
+
+.mobileslider {
+	display: none;
+}
+.customslider {
+	display: block;
+}
+.search-modal.active .search-modal-inner input:focus {
+	outline: none;
+}
+
+.bottom_slider .vc_slide {width:100% !important;}
+.bottom_slider .vc_images_carousel .vc_carousel-inner .vc_carousel-slideline .vc_carousel-slideline-inner > .vc_item {
+	float: left;
+	visibility: inherit;
+	width: 33%;
+	padding:10px;
+}
+.video-link.small_video_btn .videotag {
+	position: relative;
+	z-index: 1;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-size: 16px;
+	background: #005e23;
+	color: #fff;
+	border-radius: 100px;
+	font-size: 16px !important;
+	font-family: 'AvenirNextCyr-Demi';
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.video-link.small_video_btn {
+	float: left;
+	width: auto;
+	margin: auto;
+	display: table;
+	animation: none;
+	position: relative;
+	border-radius: inherit;
+}
+
+.video-link.small_video_btn::before, .video-link.small_video_btn::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 50%;
+	animation: inherit;
+	animation-delay: 1s;
+	display:none;
+}
+.angur_button.custom_angur_button {
+	float: left;
+	width: auto;
+}
+.video_icon_popup {
+	width: auto !important;
+	margin-left: 10px !important;
+}
+.video-link.small_video_btn .videotag i {
+	font-size: 18px;
+	margin-right: 10px;
+	line-height: 18px;
+}
+
+.videotag:hover {
+	cursor: pointer;
+	background: #f9eb0c !important;
+	color: #000 !important;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+    display: none !important;
+}
+
+.main-text p {
+	font-size: 32px;
+    line-height: 38px;
+    font-family: 'AvenirNextCyr-Demi';
+    float: left;
+    width: 100%;
+    color: #005e23;
+}
+
+.connecting-description p {
+	font-size: 18px;
+    color: #000000;
+    float: left;
+    width: 100%;
+    font-family: 'AvenirNextCyr-Light';
+    line-height: 30px;
+    margin-top: 40px;
+}
+
+.great-day-para p {
+	color: #000000;
+    font-size: 20px;
+    line-height: 30px;
+    float: left;
+    width: 100%;
+    font-family: 'AvenirNextCyr-Light';
+    margin-top: 35px;
+}
+
+.back-btn a {
+    color: #005e23;
+    font-size: 16px;
+    line-height: 20px;
+    float: left;
+    width: 100%;
+    font-family: 'AvenirNextCyr-Demi';
+    text-align: center;
+}
+
+.thanks-inner-section {
+    width: 100%;
+    padding: 0;
+    background: #fff;
+    padding: 25px 50px 50px;
+    margin: 2em auto 2em;
+    display: block;
+    text-align: center;
+}
+
+.back-btn p {
+    float: right;
+    width: 100%;
+    margin: 40px 0 0 5em;
+}
+
+.page_name_container {
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    float: left;
+    width: 100%;
+}
+
+.page_name_container.about-page-container {
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    float: left;
+    width: 100%;
+}
+
+.site-logo img {
+    max-height: 6rem;
+    margin: 0 auto;
+    width: 65%;
+    height: auto !important;
+    max-height: initial !important;
+}
+
+.icon-detail p {
+	font-size: 22px;
+    line-height: 26px;
+    color: #017a40;
+    font-family: Gilroy-ExtraBold;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.icon-detail img {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.recipe-description-section {
+    margin-top: 50px;
+    border: 1px dashed #017a40;
+}
+
+.recipe-title-a p {
+	float: left;
+    width: 100%;
+    font-size: 48px;
+    line-height: 60px;
+    font-family: Gilroy-ExtraBold;
+    color: #017a40;
+    position: relative;
+    padding-bottom: 50px;
+	
+}
+
+.recipe-title-a p:after {
+    content: "";
+    background-color: #017a40;
+    width: 160px;
+    height: 2px;
+    position: absolute;
+    bottom: 34px;
+    left: 0;
+	
+}
+
+.recipe-detail-para p {
+	font-size: 18px;
+    color: #131313;
+    float: left;
+    width: 100%;
+    font-family: 'AvenirNextCyr-Demi';
+    line-height: 28px;
+	padding: 10px 0;
+}
+
+.cooking-detail {
+	float: left;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.cooking-detail p {
+	float: left;
+    width: 90%;
+    padding-left: 30px;
+    font-family: 'AvenirNextCyr-Light';
+    font-size: 18px;
+    line-height: 26px;
+    color: #444;
+}
+
+
+.cooking-detail span {
+	float: left;
+    font-family: 'Gilroy-Light';
+    border: 1px solid #017a40;
+    width: 32px;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 16px;
+    height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 7px;
+
+}
+
+.right-cooking-section {
+    border-left: 1px dashed #017a40;
+    padding: 20px 50px 50px 50px;
+}
+
+.left-cooking-section {
+    padding: 20px 50px 50px 50px;
+}
+
+/****Right modal****/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+    z-index: 9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-form .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidebar-form a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.request-quote-popup {
+    cursor: pointer;
+    position: fixed;
+    z-index: 9;
+    right: 0px;
+    bottom: 0px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 32px;
+    margin-left: 0;
+    background: #017a40;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Gilroy-Light;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .contact-form span {
+    float: left;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.sidenav .contact-form {
+    width: 100%;
+    padding: 15px 15px 0 15px;
+    margin-top: 0;
+    float: left;
+}
+
+.sidenav .submit-btn {
+    padding: 30px 15px 0 0;
+}
+
+.sidenav .contact-form input, .contact-form textarea {
+    font-size: 15px;
+    line-height: normal;
+    padding: 12px 15px;
+}
+
+.sidenav h2 {
+	float: left;
+    width: 100%;
+    font-size: 35px;
+    line-height: 40px;
+    color: #017a40;
+    font-family: 'AvenirNextCyr-Demi';
+    padding: 20px 0 0 30px;
+}
+
+.request-quote-popup img {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.recipe-top-section p {
+	font-size: 20px;
+    color: #017a40;
+    float: left;
+    width: 100%;
+    font-family: 'AvenirNextCyr-Demi';
+    line-height: 30px;
+    padding: 10px 0;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.recipe-top-section p:after {
+	content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #017a40;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.dal-makhani-recipe .recipe-detail-para p {
+    padding-left: 15px;
+}
+
+.fts-jal-fb-description-wrap {
+    display: none !important;
+}
+
+.fts-jal-single-fb-post:nth-child(1), .fts-jal-single-fb-post:nth-child(2), .fts-jal-single-fb-post:nth-child(3) {
+	display: block;
+}
+
+
+.fts-jal-single-fb-post { display:none;}
+
+
+.fts-instagram-wrapper { display:none;}
+.fts-instagram-wrapper:nth-child(1), .fts-instagram-wrapper:nth-child(2), .fts-instagram-wrapper:nth-child(3) {
+	display: block;
+	float: left;
+	width: 31.5% !important;
+	margin: 0 10px !important;
+}
+
+.sidenav .contact-form .submit-btn input {
+    padding: 12px 40px;
+}
+
+.featured-media-inner.section-inner {
+	position: relative;
+}
+
+.type-post .featured-media-inner.section-inner:after {
+	width: 100%;
+    content: " ";
+    background-image: url(/wp-content/uploads/2020/10/slider_bg_bottom-1.png);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height:50px;
+	right: 0;
+}
+
+.ktchen-corner-para {
+    width: 35%;
+    float: right;
+    text-align: left;
+}
+
+.export_para .exporta-headline p {
+	float: left;
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px !important;
+    font-family: 'AvenirNextCyr-Light';
+    text-align: left;
+    margin: 30px 0 0 0;
+}
+.export_para .exporta-headline p strong {
+	font-family: 'AvenirNextCyr-Demi';
+}
+
+
+
+.mobile_export { display:none;}
+
+.export_desktop {
+	float: left;
+	width: 100%;
+	position: relative;
+	margin: 50px 0 80px 0;
+}
+
+.export_desktop img { width:100%;}
+
+.canada_location {
+	position: absolute;
+	left: 110px;
+	top: 15px;
+}
+.canada_location img {
+	height: 34px;
+	width: auto;
+}
+
+.usa_location {
+	position: absolute;
+	left: 158px;
+	top: 6px;
+}
+.usa_location img {
+	height: 55px;
+	width: auto;
+}
+
+
+.kenya_location img {
+	height: 42px;
+	width: auto;
+}
+.kenya_location {
+	position: absolute;
+	left: 199px;
+	top: 131px;
+}
+
+.dubai_location img {
+    width: auto;
+    height: 50px;
+}
+.dubai_location {
+    position: absolute;
+    left: 600px;
+    top: 52px;
+}
+.singapore_location {
+    position: absolute;
+    right: 318px;
+    top: 96px;
+}
+.singapore_location img {
+    height: 53px;
+    width: auto;
+}
+.australia_location {
+    position: absolute;
+    right: 165px;
+    top: 146px;
+}
+.australia_location img {
+    height: 39px;
+    width: auto;
+}
+.nz_location {
+    position: absolute;
+    right: 15px;
+    top: 196px;
+}
+.nz_location img {
+    width: auto;
+    height: 30px;
+}
+
+.homemenu { display:none;}
+
+.product-main-section-a {
+    margin-bottom: 70px;
+}
+
+/*.Product_Block .wpb_single_image.wpb_content_element.vc_align_center.wpb_animate_when_almost_visible.wpb_fadeInUp.fadeInUp.Product_image.wpb_start_animation.animated {
+    background: #fafafa;
+    border: 1px solid #eff0ed;
+    margin-bottom: 0;
+    border-bottom: none !important;
+    padding: 30px 0 0 0;
+}
+.Product_Block .wpb_text_column.wpb_content_element.wpb_animate_when_almost_visible.wpb_fadeInUp.fadeInUp.Product_Name.wpb_start_animation.animated {
+    background: #fafafa;
+    border: 1px solid #eff0ed;
+    display: inline-block;
+    width: 100%;
+    border-top: none !important;
+    padding: 20px 0;
+}*/
+
+.display-none {
+	display: none;
+}
+
+.Mobile_Product_Container { display:none;}
+
+.woocommerce table.shop_attributes td { padding:8px !important;}
+
+.woocommerce ul.products li.product a:hover, .woocommerce ul.products li.product a:focus {
+    outline: none !important;
+}
+
+.primary-menu a:hover, .primary-menu a:focus, .primary-menu .current_page_ancestor {
+    text-decoration: none !important;
+}
+
+.c_related_product h2 {
+    text-transform: capitalize;
+}
+
+.related.products.c_related_product ul li:nth-child(4) {
+    display: none;
+}
+
+.post-template-default .entry-content p strong {
+    color: #000;
+    font-family: Gilroy-Extrabold;
+    font-size: 28px;
+    font-weight: normal;
+    margin: 40px 0 -15px 0 !important;
+    float: left;
+}
+
+.post-template-default .entry-content ul {
+    float: left;
+    margin-bottom: 12px;
+	padding-left: 0;
+}
+.post-template-default .entry-content ul li {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    line-height: normal;
+    font-size: 16px;
+    font-family: 'AvenirNextCyr-Light';
+    color: #000;
+}
+.post-template-default .entry-content ul li strong {
+	font-weight: normal;
+	font-family: Gilroy-Extrabold;
+}
+
+.metaslider .flexslider .flex-direction-nav li a {
+    background-image: url('https://www.angur.com/wp-content/uploads/2020/11/custom_slider_arrow.png') !important;
+    background-size: 84px 40px !important;
+}
+
+.page_name_container.about_page_name_container .recipe_container {
+	max-width: 1200px;
+	margin: auto;
+}
+.page_name_container.about_page_name_container .recipe_container .page_name {
+	text-align: left !important;
+}
+.page_name_container.about_page_name_container .recipe_container .page_name_para p {
+	text-align: left !important;
+	float: left;
+}
+
+.page_name_container.about_page_name_container .recipe_container .wpb_wrapper {
+	width: 400px;
+	float: right;
+}
+
+.copyright br { display:none;}
+
+.sidenav.intro {
+	width: 420px;
+}
+
+.ft-block p strong {
+	font-weight: normal;
+	font-family: 'AvenirNextCyr-Demi';
+	font-size: 18px;
+}
+
+.ft-block.ft-block2 a {
+	float: left;
+	width: 100%;
+}
+
+div.wpcf7 .ajax-loader {background-repeat:no-repeat;}
+
+.contact-form input:focus , .contact-form textarea:focus {
+	outline: none;
+	box-shadow: none;
+	border-color: transparent;
+}
+
+.contact-form select {
+	background-color: #f0f1f3;
+	color: #5e5e5f;
+	font-size: 17px;
+	line-height: 22px;
+	border: 1px solid #f0f1f3;
+	padding: 15px 15px;
+	font-family: 'AvenirNextCyr-Light';
+	width: 100%;
+}
+
+.contact-form select:focus {
+	outline: none;
+	box-shadow: none;
+	border-color: transparent;
+}
+.contact-form select option {
+	font-family: Verdana;
+	font-size: 14px;
+}
+
+.ultitle { font-family: 'AvenirNextCyr-Demi';
+font-weight: normal;
+font-size: 20px;
+color: #000;}
+
+.woocommerce div.product .c_product_description .panel ul li {
+	font-family: 'AvenirNextCyr-Light';
+	font-size: 16px;
+	line-height: 22px !important;
+	color: #5e5e5f;
+}
+table.woocommerce-product-attributes.shop_attributes {
+	margin: 0;
+}
+
+/****Responsive CSS****/
+
+@media only screen and (max-width: 1280px) {
+.customslider .flexslider .slides img {
+    height: 60vh;
+}
+	
+	.customslider .metaslider {
+	float: left;
+	width: 100% !important;
+	height: auto;
+}
+	.customslider {
+	height: auto;
+}
+	.slider_bottom_image {bottom:40px;}
+	.Main_Page_Banner {
+	float: left;
+	width: 100% !important;
+	height: 60vh;
+}
+	.page_name_container.about-page-container {
+	height: 65vh;
+}
+	.page_name_container {
+	height: 65vh;
+	}
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+.page_name_container.about_page_name_container .recipe_container .page_name, .page_name_container.about_page_name_container .recipe_container .page_name_para p {
+    text-align: center !important;
+	width: 100%;
+}
+.page_name_container.about_page_name_container .recipe_container .wpb_wrapper {
+    width: 100%;
+}
+.cooking-detail p {
+    float: left;
+    width: 88%;
+}
+.header-alt .header-inner .toggle path {
+    fill: #017a40;
+}
+.page_name {
+    font-size: 45px;
+	line-height: 50px;
+}
+
+.page_name_para p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.page_section_title p {
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.page-para p {
+    font-size: 16px;
+    line-height: 25px;
+}
+	
+.what_we_do_section.why_choose_us .page_section_title p {
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.what_we_do_section {
+    float: left;
+}
+
+.what_we_do_section.why_choose_us .what-we-do-para p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+	
+.why_choose_us {
+    padding-top: 5px;
+	height: 35em;
+}
+	
+.images_container .wpb_single_image img {
+    height: auto;
+    width: 55%;
+    margin: auto;
+}
+	
+.images_container {
+    margin-top: 52px;
+}
+	
+.what-we-do-para p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 15px;
+}
+	
+.what-we-do-para {
+    margin-bottom: 40px;
+}	
+
+.recipe-title p {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 40px;
+}
+
+.recipe-description p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.left-img-section .vc_single_image-wrapper:after {
+    width: 94%;
+    height: 96%;
+    right: -6px;
+    bottom: -30px;
+    z-index: -9;
+}
+	
+.left-img-section .vc_single_image-wrapper img {
+    width: 93%;
+}
+
+.left-img-section.right-img-section .vc_single_image-wrapper img {
+    float: right;
+}
+	
+.left-img-section.right-img-section .vc_single_image-wrapper:after {
+    left: -9px;
+}
+	
+.left-img-section.right-img-section {
+    margin-top: 50px;
+}
+	
+.recipe-main-blog {
+    padding: 35px 0 45px 0;
+}
+	
+.right-des-section.left-des-section .recipe-title p {
+    margin-top: 0;
+}	
+
+.contact-title p {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.contact-des p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.mandatory-text p {
+    padding-left: 0;
+}
+
+.contact-form {
+    width: 100%;
+    margin: auto;
+}
+
+.insight-blog .owl-carousel .owl-stage-outer {
+    overflow: visible !important;
+}
+
+.insight-blog .owl-carousel .owl-item .vc_grid-item:first-child {
+    width: 100% !important;
+}
+
+.insight-blog h4 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.insight-blog .vc_custom_heading p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 5px;
+}
+	
+.insight-blog .vc_gitem-zone.vc_gitem-zone-c {
+    padding: 15px 12px;
+}
+	
+.insight-blog .owl-carousel .owl-item .vc_grid-item:first-child .vc_grid-item-mini {
+    min-height: auto;
+}
+
+.product_listing .woocommerce.columns-3 ul.products li.product {
+	width: 48%;
+}
+
+.product_listing .woocommerce ul.products li.product a h2 {
+    line-height: 25px;
+    font-size: 20px;
+}
+
+
+.c_product_details p strong {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    margin-top: 32px;
+    float: left;
+    width: 100%;
+}
+
+.woocommerce div.product .c_product_description ul.tabs li.active a {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.woocommerce div.product .c_product_description ul.tabs li {
+    background-color: transparent;
+    font-family: 'AvenirNextCyr-Demi';
+    padding: 5px 22px;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.woocommerce div.product .c_product_description .panel {
+    padding: 5px 15px;
+}
+
+.woocommerce div.product .c_product_description .panel p {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.c_related_product h2 {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.woocommerce .c_related_product ul.products li.product a img {
+    padding: 20px;
+    height: 130px;
+}
+
+.woocommerce .c_related_product ul.products li.product {
+    padding: 8px;
+    width: 46.75%;
+}
+
+.woocommerce .c_related_product ul.products li.product .woocommerce-loop-product__title {
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.post-template-default .entry-content h2 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.post-template-default .entry-content h4 {
+    font-size: 20px;
+    line-height: 25px;
+    top: 56%;
+}
+
+.post-template-default .entry-content p, .recipe-description-detail p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 0px;
+    padding: 0 20px;
+}
+
+.slider1_text {
+    line-height: 35px !important;
+    font-size: 30px !important;
+	margin-top: 13% !important;
+}
+
+.slider3_text {
+    margin-top: 15% !important;
+    line-height: 35px !important;
+    font-size: 30px !important;
+}
+
+.second_slider {
+    top: 54%;
+    left: 67%;
+}
+
+.second_slider img {
+    width: 32% !important;
+}
+.slider-4 p {
+    font-size: 40px;
+    line-height: 56px;
+    padding-top: 21%;
+}	
+
+.homepage_our_product {
+    padding: 0 0 8px 0;
+    float: left;
+}
+.home-product-title {
+    float: left;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+	
+.Product_Name p {
+    font-size: 18px;
+}
+	
+h2.insights_title {
+    font-size: 40px;
+    line-height: 44px;
+    margin: 30px 0 40px 0 !important;
+}
+
+.insights_slider .flexslider .slides img {
+    width: 497px;
+    padding-right: 70px;
+}
+	
+.insights_slider .flexslider_slide.flexslider li .flex-caption .post-title {
+    font-size: 28px;
+}
+
+.insights_slider .flexslider_slide.flexslider li .flex-caption p {
+    font-size: 16px;
+    line-height: 28px;
+}
+	
+.insights_slider .flexslider .slides li::after {
+    width: 47%;
+    height: 82%;
+    right: 21.5em;
+    bottom: 28px;
+}
+.insights {
+    padding: 20px  0 50px 0;
+}
+
+.media {
+    padding: 5px 0 0px 0;
+}
+	
+h2.media_title {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.page_name_container.about-page-container {
+    height: 76vh;
+}
+	
+.what_we_do_image {
+    margin-bottom: 0;
+}
+
+.product_listing .woocommerce.columns-3 ul.products li.product {
+    width: 30%;
+}
+
+.product_listing .woocommerce ul.products li.product a img {
+    padding: 15px;
+    height: 220px;
+}
+
+.right-des-section {
+    padding-left: 25px;
+}
+	
+.icon-detail p {
+    font-size: 18px;
+    line-height: 25px;
+}
+	
+.recipe-title-a p {
+    font-size: 35px;
+    line-height: 40px;
+    padding-bottom: 45px;
+}
+
+.recipe-title-a p:after {
+    width: 120px;
+}
+
+.recipe-detail-para p {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 8px 0;
+}
+
+.left-cooking-section, .right-cooking-section {
+    padding: 0 20px 35px 20px;
+}
+
+.cooking-detail p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.post-template-default .entry-content h4 {
+    top: 40%;
+}
+
+.woocommerce .c_related_product ul.products li.product:nth-child(2), .woocommerce .c_related_product ul.products li.product:nth-child(4), .woocommerce .c_related_product ul.products li.product:nth-child(4) {
+    margin-right: 0;
+}
+
+.woocommerce .c_related_product ul.products li.product:nth-child(3), .woocommerce .c_related_product ul.products li.product:nth-child(6), .woocommerce .c_related_product ul.products li.product:nth-child(9) {
+    margin: 0 3.8% 2.992em 0;
+}
+.post-template-default .entry-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+	
+.search-toggle {
+    display: none !important;
+}
+	
+.social label {
+    width: 100%;
+}
+.social_icons {
+    padding-top: 8px;
+    padding-left: 0;
+    float: none;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+	
+.social_icons a {
+    float: none;
+    width: auto;
+    font-size: 32px;
+    color: #fff;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.menu-modal-inner.modal-inner {
+	background: #332222 url(https://www.angur.com/wp-content/uploads/2020/10/angur_navigation.gif) !important;
+	background-size: cover !important;
+	background-position: bottom !important;
+}
+
+.modal-menu li {
+    border: none !important;
+}
+
+.modal-menu li a {
+    text-align: center;
+    letter-spacing: 0 !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    line-height: 30px !important;
+    font-family: 'Gilroy-Light' !important;
+    padding: 10px 30px !important;
+    color: #fff !important;
+}
+
+button.close-nav-toggle svg {
+    color: #fff !important;
+    z-index: 9;
+}
+	
+.Product_Block {
+	background: #fafafa;
+	border: 1px solid #eff0ed;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	width: 22.4%;
+	margin: 0 12px;
+}
+	.about_us_container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	width: 95%;
+}
+
+.ft-block p br {
+     display: none;
+}
+.ft-block.ft-block2 {
+     width: 33%;
+     padding-right: 50px;
+}
+.ft-block.ft-block1 {
+     width: 33%;
+}
+.ft-block.ft-block3 {
+     width: 33%;
+}
+.fts-instagram-wrapper:nth-child(1), .fts-instagram-wrapper:nth-child(2), .fts-instagram-wrapper:nth-child(3) {
+     display: block;
+     float: left;
+     width: 31.1% !important;
+     margin: 0 10px !important;
+}
+h2.media_title {
+     font-size: 48px;
+     line-height: 48px;
+     
+}
+.vc_row.wpb_row.vc_row-fluid.kitchen_corner.vc_row-has-fill {
+     background-position: -110px !important;
+}
+.header-alt .header-inner.section-inner {
+	padding: 8px 30px;
+}
+.header-navigation-wrapper {
+    width: 100%;
+}
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 767px) {
+.site-logo img {
+    width: 14% !important;
+    float: left;
+}
+.slider-4 p {
+    font-size: 35px;
+    line-height: 54px;
+    padding-top: 32%;
+}
+
+.metaslider .caption-wrap .caption img {
+    width: 83% !important;
+	margin:auto !important;
+    text-align: center;
+}
+
+.second_slider {
+    top: 54%;
+    left: 86% !important;
+}
+.metaslider .caption-wrap .caption .second_slider img {
+    width: 32% !important;
+}
+	
+.slider3_text {
+    margin-top: 17% !important;
+    padding-bottom: 14px;
+	line-height: 45px !important;
+    font-size: 37px !important;
+}
+
+.slider1_text {
+    line-height: 35px !important;
+    font-size: 30px !important;
+    margin-top: 23% !important;
+    padding-bottom: 20px;
+}
+	
+.ft-block {
+    width: 100% !important;
+	margin-bottom: 30px;
+}
+	
+.insight-blog .owl-carousel .owl-item .vc_grid-item {
+    width: 50%;
+}
+.fts-instagram-wrapper:nth-child(1), .fts-instagram-wrapper:nth-child(2), .fts-instagram-wrapper:nth-child(3) {
+    width: 30.1% !important;
+}
+
+.ft-block ul li {
+    float: left;
+    width: 26%;
+}
+
+.ft-block-top {
+    float: left;
+    width: 50%;
+}
+
+.home_about_para {
+    float: left;
+    width: 100%;
+}
+
+.home_about_para p {
+    float: left;
+    width: 60%;
+}
+	
+.insights::before {
+	display: none;
+}
+
+.ft-block {
+    width: 100% !important;
+}
+	
+}
+
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+.insight-blog .owl-carousel .owl-item .vc_grid-item {
+    width: 50%;
+}
+
+.header-titles-wrapper {
+    max-width: 16% !important;
+}
+	
+.Main_Page_Banner .vc_column-inner {
+    margin-top: 35px !important;
+}
+		
+.right-des-section.left-des-section {
+	padding-left: 0;
+	padding-right: 40px;
+	margin-top: 55px;
+}
+
+.right-des-section {
+    padding-left: 40px;
+}
+ 
+/*.ft-block {
+    width: 32% !important;
+}
+
+.ft-block.ft-block2 {
+    margin: 0 37px 0 0;
+}*/
+
+.header-alt .header-inner.section-inner {
+    padding: 10px 30px;
+}
+
+.homepage_our_product {
+    padding: 0px 0 40px 0;
+}
+
+.home_about_us h1 {
+    font-size: 60px;
+    line-height: 65px;
+}
+
+.Product_Block {
+    margin: 14px 12px;
+}
+	
+.Product_Name p {
+    font-size: 18px;
+    line-height: 24px;
+}
+	
+.insights_slider .flexslider_slide.flexslider li .flex-caption .post-title {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.insights_slider .flexslider_slide.flexslider li .flex-caption p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 25px;
+}
+
+.insights_slider .flexslider .slides img {
+    width: 500px;
+    min-height: 300px;
+    height: auto;
+}
+
+h2.insights_title {
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0 50px 0 !important;
+}
+
+.insights_slider .flexslider .slides li::after {
+    width: 45%;
+    height: 83%;
+    right: 22.5em;
+    bottom: 32px;
+}
+
+.insights {
+    height: auto;
+    padding-bottom: 60px !important;
+}
+	
+.kitchen_corner_container h2 {
+    font-size: 40px;
+    line-height: 45px;
+}
+	
+h2.media_title {
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.site-logo img {
+    width: 40%;
+    float: left;
+}
+
+.customslider .flexslider .slides img {
+    height: 78vh;
+}
+
+.site-logo img {
+    width: 16%;
+    float: left;
+    padding-left: 20px;
+}
+}
+
+@media screen and (max-width: 1100px) and (min-width: 801px) {
+.site-logo img {
+    width: 75%;
+    float: left;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.site-logo img {
+    width: 40%;
+    float: left;
+}
+button.close-nav-toggle {
+    padding: 35px 0;
+}
+	
+.footer {
+   height: auto;
+    margin-top: 60px;
+	padding-bottom: 0;
+}
+	
+.ft-block span {
+    font-size: 20px;
+    margin: 0 0 15px 0;
+    line-height: 24px;
+}
+
+.footer_dal {
+    display: none;
+}
+
+.social {
+    margin-top: 25px;
+}
+	
+.social label {
+    font-size: 20px;
+    line-height: 25px;
+	text-align: center;
+}
+
+.social_icons {
+    padding-top: 8px;
+    padding-left: 0;
+    float: left;
+    width: 100%;
+}
+
+.copyright {
+    float: left;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    line-height: 30px;
+    position: initial;
+	padding: 20px 0;
+}
+	
+.copyright span {
+    color: #aeaeae;
+    float: right;
+    font-size: 12px;
+    width: 100%;
+}
+	
+.contact-form span {
+    float: left;
+    width: 100%;
+    padding: 6px 0;
+}
+	
+.contact-form input, .contact-form textarea {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 12px 12px;
+}
+	
+.contact-form span:nth-child(11), .contact-form span:nth-child(9) {
+    width: 100%;
+}
+
+.submit-btn input {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 12px 35px;
+}
+	
+.submit-btn {
+    float: left;
+    width: 100%;
+    padding: 30px 0px 0 0;
+}
+
+.locate-us h2, .locate-us-title {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.locate-us {
+    padding: 0 0 35px 0;
+}
+
+.locate-us  .vc_column-inner {
+	padding: 0;
+}
+
+.contact-right-section {
+    padding-left: 35px;
+}
+	
+.address-des p {
+    line-height: 22px;
+}
+	
+.address-detail img {
+    float: left;
+    margin-top: 4px;
+    width: 5%;
+}
+	
+.detail-title {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 14px 0 14px;
+    min-width: 100px;
+}
+
+.detail-des, .detail-des a {
+    font-size: 15px;
+}
+
+.homepage_our_product h2 {
+    font-size: 30px;
+    line-height: 35px;
+}
+	
+#site-header {
+    z-index: 2;
+}
+
+.header-inner.section-inner {
+    max-width: 1200px;
+    width: 100%;
+	float: left;
+    width: 100%;
+}
+
+.customer_care_number {
+    float: right;
+    position: initial;
+    right: 0;
+    text-align: right;
+	display: none;
+}
+	
+.header-titles-wrapper {
+    align-items: center;
+    display: block;
+    justify-content: left;
+    padding: 0;
+    text-align: left;
+    float: left;
+	width: 100%;
+	position: relative;
+}
+	
+.nav-toggle {
+    top: 8px;
+}
+	
+body:not(.overlay-header) .toggle-inner .toggle-text {
+	color: #ffffff;
+	display: none;
+}
+	
+	
+}
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+.customslider .flexslider .slides img {
+    height: 80vh !important;
+}
+.customslider .flexslider .slides .second_slider img {
+    height: auto !important;
+}
+.second_slider {
+    top: 54%;
+    left: 75% !important;
+}
+.Product_Block {
+    width: 21% !important;
+}
+.homepage_our_product {
+    padding: 0px 0 0 0;
+}
+.customslider .flexslider .slides .slider3_text_border img {
+    height: auto !important;
+}
+.product_listing .woocommerce.columns-3 ul.products li.product {
+    width: 30% !important;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+.toggle.nav-toggle.mobile-nav-toggle {
+    width: auto;
+    padding: 0;
+    top: 0;
+    height: auto;
+}
+.header-titles-wrapper {
+    max-width: 100% !important;
+}
+	
+	
+.product_listing .woocommerce.columns-3 ul.products li.product {
+    width: 46%;
+}
+.homepage_our_product .container {
+	padding: 0;
+}
+
+.Product_Name p {
+    font-size: 18px;
+    line-height: 24px;
+}
+	
+.Product_Block {
+    width: 45%;
+    margin: 14px 15px;
+    float: left;
+}
+
+.home-product-title {
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+h2.insights_title {
+    font-size: 35px;
+    line-height: 40px;
+    margin: 0px 0 35px 0 !important;
+    padding: 0;
+}
+	
+.insights {
+    height: auto;
+	padding-bottom: 0px;
+}
+
+.insights_slider .flexslider .slides img {
+    width: 100%;
+    float: left;
+    min-height: auto;
+    padding-right: 0;
+    height: auto;
+}
+	
+.insights_slider .flexslider_slide.flexslider li .flex-caption {
+    margin-top: 35px;
+	width: 100%;
+	min-height: 230px;
+}
+	
+.insights_slider .flexslider_slide.flexslider li .flex-caption .post-title {
+    font-size: 21px;
+    line-height: 30px;
+    margin: 0;
+}
+	
+.insights_slider .flexslider_slide.flexslider li .flex-caption p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 25px;
+}
+
+.insights::after {
+    height: auto;
+}
+	
+.insights_slider .flexslider .slides li::after {
+	display: none;
+}
+	
+.kitchen_corner_container h2 {
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.kitchen_corner_para p {
+    font-size: 16px;
+    line-height: 25px !important;
+    margin: 20px 0 10px 0 !important;
+}
+	
+.angur_button button {
+    font-size: 14px !important;
+}
+	
+.kitchen_corner_container {
+    margin-top: 100px;
+}
+
+	
+.kitchen_corner {
+    height: 620px;
+}
+	
+.fts-jal-single-fb-post {
+    width: 100% !important;
+}
+	
+h2.media_title {
+    font-size: 35px;
+    line-height: 40px;
+    margin: 0 0 20px 0 !important;
+}
+	
+.fts-jal-fb-link-wrap {
+    margin-bottom: 30px;
+}
+	
+.modal-menu > li > .ancestor-wrapper > a {
+	color: #210808;
+    font-family: 'Gilroy-Light';
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+    padding: 15px 30px;
+}
+	
+button.close-nav-toggle {
+    padding: 15px 0;
+	font-family: 'Gilroy-Light';
+	font-size: 15px;
+	line-height: 20px;
+}
+
+button.close-nav-toggle svg {
+    color: #005e23;
+}
+
+.header-titles {
+	float: left;
+	width: 100%;
+}
+	
+.media {
+    padding: 10px 0 0px 0;
+    margin: 0;
+    float: left;
+    width: 100% !important;
+}
+	
+.media .vc_column-inner {
+    padding: 0;
+}
+	
+.fts-jal-fb-picture {
+    width: 100%;
+}
+	
+.fts-jal-single-fb-post img {
+	width: 100%;
+}
+	
+.about_us_container {
+    display: block;
+}
+
+.home_about_left {
+    padding-top: 0px;
+    width: 100% !important;
+	margin-top: 80px;
+}
+
+.home_about_right {
+    width: 100%;
+    margin-top: 60px;
+}
+	
+.home_about_us h1 {
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.video {
+    height: 600px;
+}
+	
+.search-toggle {
+    position: absolute;
+    bottom: 0;
+    right: 70px;
+    top: -20px;
+    float: right;
+	left: auto;
+}
+	
+.search-toggle svg {
+    max-width: 1.9rem;
+    width: 1.9rem;
+}
+
+.mobile-nav-toggle {
+    top: -20px;
+}
+	
+.header-alt .small_logo a img {
+    width: 90px;
+}
+
+.header-alt .header-inner.section-inner {
+    padding: 12px 20px;
+}
+
+.wpb_gallery .wpb_flexslider .flex-control-nav {
+    margin-top: 30px;
+}
+.slider1_text {
+    line-height: 35px !important;
+    font-size: 30px !important;
+	margin-top: 16% !important;
+}
+
+.slider3_text {
+    margin-top: 15%;
+    line-height: 35px !important;
+    font-size: 30px !important;
+}
+
+.second_slider {
+    top: 54%;
+    left: 67%;
+}
+
+.second_slider img {
+    width: 32% !important;
+}
+.slider-4 p {
+    font-size: 40px;
+    line-height: 56px;
+    padding-top: 24%;
+}	
+.product-main-section-a {
+    margin-bottom: 15px;
+}
+
+.insights::after {
+	display: none;
+}
+.customslider .flexslider .slides img {
+    height: 57vh;
+}
+	
+}
+
+
+
+@media only screen and (max-width: 767px) {
+.sidenav.intro {
+    width: 100%;
+}
+.sidenav .closebtn {
+    font-size: 25px;
+    width: 36px;
+    height: 36px;
+    line-height: 32px;
+}
+.sidenav .contact-form input, .contact-form textarea {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 15px;
+}
+.sidenav h2 {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 8px 0 0 30px;
+}
+.customslider .flexslider .slides img {
+    height: 58vh;
+}
+.page_name_container {
+    width: 100%;
+	height: 55vh;
+}
+.Main_Page_Banner {
+    height: 90vh;
+}
+.customslider {
+	display: none;
+}
+.mobileslider {display:block;}
+.n2-section-smartslider.fitvidsignore.n2_clear {
+	display: none;
+}
+.mobileslider .n2-section-smartslider.fitvidsignore.n2_clear {
+	display: block;
+}
+	button.toggle.search-toggle.mobile-search-toggle span.toggle-text {
+    display: none;
+}
+	button.toggle.nav-toggle.mobile-nav-toggle span.toggle-text {
+    display: none;
+}
+	.header-inner {
+    max-width: 168rem;
+    padding: 2.15rem 0;
+    z-index: 100;
+}
+	button.toggle.close-nav-toggle.fill-children-current-color span.toggle-text {
+    display: none;
+}
+	.toggle.search-toggle.mobile-search-toggle {
+	display: none;
+}
+	.toggle.nav-toggle.mobile-nav-toggle {
+	width: auto;
+	padding: 0;
+	top: 0;
+	height: auto;
+}
+	.modal-menu a:focus, .modal-menu a:hover, .modal-menu li.current-menu-item > .ancestor-wrapper > a, .modal-menu li.current_page_ancestor > .ancestor-wrapper > a {
+	text-decoration: none;
+	color: #00a459 !important;
+}
+	.Product_Block {
+	width: 100%;
+	margin: 14px 0 0 0;
+	float: left;
+	background: transparent;
+}
+	.Product_Name p {
+	float: left;
+	width: 100%;
+	font-size: 18px;
+	line-height:20px;
+	font-family: 'Gilroy-Light';
+	color: #1f1f1f;
+}
+	.header-alt .header-inner.section-inner {
+	padding: 12px 15px;
+}
+	.header-alt .small_logo {
+	display: none;
+}
+	.header-alt .header-titles-wrapper {
+	display: block;
+}
+	.video_top img {object-fit:cover;}
+	.video_bottom img {object-fit: cover;}
+	.popup {
+	width: 90%;
+}
+	.videoblock {
+	width: 100%;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+}
+	.popup iframe {
+	width: 100% !important;
+	height: 220px !important;
+}
+	.video-close {
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	font-family: 'Graphik-Medium';
+	top: 50px;
+	font-size: 24px;
+}
+	.insights::before , .insights::after { display:none;}
+	.insights .vc_row.wpb_row.vc_inner.vc_row-fluid.container {
+	padding: 0;
+}
+	 .bottom_slider .vc_images_carousel .vc_carousel-inner .vc_carousel-slideline .vc_carousel-slideline-inner > .vc_item {
+	float: left;
+	visibility: inherit;
+	width: 100%;
+	padding: 10px 0;
+}
+	.bottom_slider .vc_row.wpb_row.vc_inner.vc_row-fluid.container {
+	padding: 0;
+}
+	.wpb_text_column.wpb_content_element {
+	float: left;
+	width: 100%;
+	margin: 0 0 20px 0;
+}
+.about_us_container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 100%;
+	display: flex !important;
+	align-items: center;
+}
+
+.search-toggle {
+    right: 50px;
+}
+	
+.why_choose_us {
+    padding-top: 5px;
+	height: 135em;
+}
+
+.product_listing .woocommerce.columns-3 ul.products li.product {
+	width: 100%;
+}
+
+.contact-right-section {
+    padding-left: 0px;
+}
+
+.Main_Page_Banner {
+    height: 75vh;
+}
+	
+.ft-block {
+    width: 100% !important;
+}
+
+.ft-block.ft-block2 {
+    margin: 30px 0;
+}
+
+.site-logo img {
+    width: 25%;
+    float: left;
+}
+	
+.request-quote-popup img {
+    width: 52%;
+}
+	
+.request-quote-popup {
+    right: -30px;
+}
+
+.video video {
+    height: 600px !important;
+}
+.kitchen_corner_container {
+    margin-top: 40px;
+}	
+.ktchen-corner-para {
+    width: 100%;
+}
+
+#scroll {
+    position: fixed;
+    right: 20px;
+}
+
+.home_about_left {
+    margin-top: 0;
+}
+.page_name_para p {
+    font-size: 14px;
+    line-height: 23px;
+    margin-top: 10px;
+	width: 85%;
+}
+
+.icon-detail figure, .icon-detail .vc_single_image-wrapper {
+    width: 100%;
+}
+	
+.icon-detail img {
+    width: 45%;
+}
+
+.icon-detail p {
+    font-size: 18px;
+    line-height: 26px;
+}
+	
+.icon-detail .wpb_single_image.vc_align_left {
+	margin-bottom: 15px;
+}
+	
+.icon-detail {
+    margin-bottom: 50px;
+}
+	
+.recipe-title-a p {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.recipe-detail-para p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.left-cooking-section {
+    padding: 25px 10px 25px 10px;
+}
+
+.recipe-title-a p:after {
+    width: 85px;
+    height: 2px;
+    bottom: 40px;
+}
+
+.right-cooking-section {
+    border-left: 0;
+    padding: 0 10px 20px 10px;
+    border-top: 1px dashed #017a40;
+}
+
+.cooking-detail p {
+    float: left;
+    width: 88%;
+    padding-left: 22px;
+}
+	
+.cooking-detail span {
+    width: 30px;
+    font-size: 14px;
+    line-height: 14px;
+    height: 30px;
+    padding-top: 6px;
+}
+
+.product-main-section-a .container {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: inline-block;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 15px 0px;
+    overflow-x: scroll;
+}
+
+.Product_Block {
+    flex: none;
+    max-width: 65%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px 10px;
+    padding: 29px 15px;
+}
+
+.kitchen_corner {
+	background-position: right;
+}
+	
+.Product_Block .vc_column-inner {
+	padding: 0;
+}
+
+.Product_Block img {
+    width: 75%;
+	margin: auto;
+}
+
+.homepage_our_product {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+	
+.site-logo img {
+    width: 85px;
+    float: left;
+}
+
+.Product_Name p {
+    font-size: 14px;
+    line-height: 20px;
+}
+}
+
+
+@media only screen and (max-width: 667px) {
+	
+	.insights_slider .flexslider_slide.flexslider li .flex-caption .post-title, .insights_slider .flexslider_slide.flexslider li .flex-caption .post-title a {
+	font-size: 24px;
+	color: #131313;
+	float: left;
+	width: 100%;
+	font-family: 'Gilroy-Light';
+	line-height: 30px;
+	margin: 0;
+}
+	
+	.sidenav .submit-btn {
+	padding: 15px 15px 0 0;
+}
+	
+	.ft-block p strong {
+	font-weight: normal;
+	font-family: 'AvenirNextCyr-Demi';
+	font-size: 18px;
+	float: left;
+}
+	
+	.Product_Name p {
+	font-size: 18px;
+	line-height: 20px;
+	font-family: 'Gilroy-Light';
+}
+	
+	.video video {
+	object-position: -150px;
+}
+	
+	.post-template-default .entry-content ul {
+    float: left;
+    margin-bottom: 12px;
+	padding-left: 25px;
+}
+	
+	.social_icons a:hover {
+	text-decoration: none;
+}
+	
+	.social label {
+	font-size: 20px;
+	line-height: 25px;
+	width: 100%;
+	text-align: center;
+}
+	.social_icons {
+	padding-top: 8px;
+	padding-left: 0;
+	float: none;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+	.social_icons a {
+	float: none;
+	width: auto;
+	font-size: 32px;
+	color: #fff;
+	margin-right: 15px;
+	transition: all 0.3s ease;
+}
+	
+	.copyright span {margin:10px 0 0 0;}
+.insights_slider .flexslider_slide.flexslider li .flex-caption {
+    min-height: initial;
+}
+	
+	.post-template-default .entry-content p strong {
+	color: #000;
+	font-family: Gilroy-Extrabold;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 40px 0 0 0 !important;
+	float: left;
+	line-height: 28px;
+}
+	
+	.post-template-default .entry-content ul {
+	float: left;
+	margin-bottom: 15px;
+	padding: 0 25px;
+}
+	
+	.video-link.small_video_btn .videotag {padding-left:35px; padding-right:35px;}
+	
+	.site-logo img {
+    width: 75px;
+    float: left;
+}
+	
+	.copyright {
+	font-size: 12px;
+	line-height: 22px;
+}
+	.copyright br { display:block;}
+	.homepage_our_product {
+	
+	padding: 50px 0 20px 0;
+}
+.product_banner_bg {
+    margin-top: -20px;
+    background-position: left !important;
+}
+	
+	.angur_button a, .angur_button a:focus {
+	font-size: 16px !important;
+	font-family: 'AvenirNextCyr-Demi';
+	font-weight: normal;
+	padding-left: 35px !important;
+	padding-right: 35px !important;
+	color: #fff !important;
+}
+	
+	.Main_Page_Banner {
+	height: 55vh;
+}
+	.page_name_container {
+	width: 100%;
+	height: 55vh;
+	margin: auto;
+}
+	.page_name_container.about-page-container {
+	height: 55vh;
+}
+	
+	.export_para.container {
+	padding: 0;
+}
+	.export_para.container .vc_column-inner {
+	padding: 5px;
+}
+	
+	.product-main-section-ab {display:none;}
+	.product-main-section-a {
+	margin-bottom: 0;
+}
+.Mobile_Product_Container .wpb_wrapper .wpb_raw_code.wpb_content_element.wpb_raw_html {
+	float: left;
+	width: 100%;
+	overflow: auto;
+	margin: 0;
+}
+.Mobile_Product_Container .wpb_wrapper .wpb_raw_code.wpb_content_element.wpb_raw_html .wpb_wrapper {
+	width: 1840px;
+	overflow: auto;
+	
+}
+.Mobile_Product_Container .Product_Block {
+	float: left;
+	width: 210px !important;
+	max-width: 210px !important;
+	padding: 29px 0 0 0;
+	background: #fafafa !important;
+	border: 1px solid #eff0ed !important;
+	min-height:265px;
+}
+.Mobile_Product_Container .wpb_wrapper .wpb_raw_code.wpb_content_element.wpb_raw_html .wpb_wrapper .Product_Block .wpb_wrapper {
+	width: auto;
+	overflow: inherit;
+}
+	
+	.Mobile_Product_Container { display:block;}
+	
+	.homemenu { display:block;}
+	
+	.export_desktop {display:none;}
+	.mobile_export {
+	float: left;
+	width: 100%;
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+	.mobile_export img {
+	width: 100%;
+}
+	
+	.fts-instagram-wrapper:nth-child(1), .fts-instagram-wrapper:nth-child(2), .fts-instagram-wrapper:nth-child(3) {
+	display: block;
+	float: left;
+	width: 100% !important;
+	margin: 10px 0 !important;
+	
+}
+	
+	.vc_row.Main_Page_Banner.Recipe_Main_Page_Banner {
+	background-position: left !important;
+	margin-top: -20px;
+}
+	.page_name_para p {
+	font-size: 15px;
+	line-height: 20px;
+	margin-top: 10px;
+}
+	.page_name {
+	font-size: 32px;
+	line-height: 32px;
+	
+}
+	
+	
+	
+	.mobile-menu {
+	display: block;
+	padding-top: 40px;
+}
+	button.close-nav-toggle {
+	padding: 15px 0;
+	font-family: 'Gilroy-Light';
+	font-size: 15px;
+	line-height: 20px;
+	position: absolute;
+	top: 10px;
+}
+	
+.modal-menu li { border:none !important;}
+.modal-menu li a {
+    text-align: center;
+    letter-spacing: 0 !important;
+    font-size: 20px !important;
+    font-weight: normal !important;
+    line-height: 20px !important;
+    font-family: 'Gilroy-Light' !important;
+    padding: 10px 30px !important;
+    color: #fff !important;
+}
+
+button.close-nav-toggle svg {
+    color: #fff;
+	z-index:9;
+}
+	
+.vc_row.wpb_row.vc_row-fluid.kitchen_corner.vc_row-has-fill {
+    background-position: left !important;
+}
+.kitchen_corner_para p br {
+    display: none;
+}
+
+.vc_row.wpb_row.vc_row-fluid.Main_Page_Banner.Product_Page_Banner.vc_row-has-fill {
+    background-position: ;
+    background-position: left !important;
+}
+	
+.product_banner_bg {
+    width: 100%;
+    height: 55vh;
+}
+.export_para .exporta-headline p {
+    font-size: 16px;
+    line-height: 26px !important;
+}
+	
+.address-des p {
+    font-size: 16px;
+	line-height: 20px;
+}
+	
+}
+

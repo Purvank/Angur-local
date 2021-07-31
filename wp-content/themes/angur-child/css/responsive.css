@@ -1,0 +1,131 @@
+@media only screen and (max-width: 2500px) {
+
+.slider3_text { margin-top: 12%; }
+.slider1_text { margin-top: 12%; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 799px) {
+.customslider .flexslider .slides .slider3_text_border img, .slider3_text_border, .slider1_text_border, .slider1_text_border img {
+    width: 100% !important;
+    height: auto !important;
+}
+.customslider .flexslider .slides img {
+    height: 65vh;
+}
+
+.page_name_container {
+    width: 100%;
+	height: 54vh;
+}
+	
+.vc_custom_1604149872690.Main_Page_Banner, .product_banner_bg, .Main_Page_Banner.Recipe_Main_Page_Banner, .singular.post-template-default .featured-media-inner img, .singular.post-template-default .featured-media-inner::before {
+    height: 52vh;
+    background-position: left !important;
+}
+.post-template-default .entry-content h2 {
+    top: 30%;
+}
+.sidenav.intro {
+    width: 355px;
+}
+.sidenav h2 {
+    font-size: 28px;
+    line-height: 32px;
+}
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 970px) {
+.slider3_text_border {
+    float: none;
+    width: 100%;
+}
+.customslider .flexslider .slides img {
+    height: 70vh;
+}	
+.ft-block.ft-block3 {
+    margin-top: 45px;
+}
+.vc_custom_1604149872690.Main_Page_Banner, .product_banner_bg, .Main_Page_Banner.Recipe_Main_Page_Banner, .singular.post-template-default .featured-media-inner img, .singular.post-template-default .featured-media-inner::before {
+    height: 52vh;
+    background-position: left !important;
+}	
+.page_name_container {
+    width: 100%;
+    height: 36vh;
+}
+.post-template-default .entry-content h2 {
+    top: 30%;
+}	
+.slider1_text {
+    margin-top: 14% !important;
+}
+.sidenav.intro {
+    width: 355px;
+}
+}
+
+@media screen and (min-width: 980px) and (max-width: 1023px) {
+.customslider .flexslider .slides .slider1_text_border img {
+	height: auto !important;
+}
+.ft-block.ft-block3 {
+    margin-top: 45px;
+}
+.page_name_container {
+    width: 100%;
+    height: 36vh;
+}
+.vc_custom_1604149872690.Main_Page_Banner, .product_banner_bg, .Main_Page_Banner.Recipe_Main_Page_Banner, .singular.post-template-default .featured-media-inner img, .singular.post-template-default .featured-media-inner::before {
+    height: 52vh;
+    background-position: left !important;
+}
+.post-template-default .entry-content h2 {
+    top: 30%;
+}
+.slider1_text {
+    margin-top: 13% !important;
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1160px) {
+.site-logo img {
+    width: 70%;
+    float: left;
+}
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1299px) {
+.site-logo img {
+    width: 50%;
+}
+.customslider .flexslider .slides img {
+    height: 120vh;
+}
+.slider3_text {
+    margin-top: 11%;
+    line-height: 45px !important;
+    font-size: 35px !important;
+	    margin-top: 12%;
+}
+.second_slider {
+    width: 80%;
+    top: 50%;
+    left: 46%;
+}
+.slider1_text {
+    line-height: 45px !important;
+    font-size: 35px !important;
+	margin-top: 10%;
+}
+	.slider-4 p {
+	font-size: 48px !important;
+	line-height: 58px !important;
+}
+.Product_Block {
+    margin: 14px 14px;
+}
+.header-alt .header-inner.section-inner {
+    padding: 8px 15px;
+}	
+}
